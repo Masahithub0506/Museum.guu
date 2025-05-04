@@ -7,48 +7,76 @@
     <meta name="keywords" content="музей, ГУУ, история, управление, университет">
     <meta name="author" content="ГУУ">
     <title>Музей ГУУ</title>
-    <!-- Подключаем CSS файл -->
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <header>
         <div class="logo-title">
-            <!-- Логотип -->
             <img src="static/logo.jpg" alt="Логотип Музея ГУУ">
             <span class="site-title">Музей ГУУ</span>
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Экспонаты</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">История ГУУ</a></li>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#exhibits">Экспонаты</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#history">История ГУУ</a></li>
             </ul>
-            <div class="lang-search">
-                <a href="#">En</a> | <a href="#">Rus</a>
-            </div>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Музей ГУУ</h1>
-        <p class="tagline">Музей истории и развития управления Государственного университета управления – одно из подразделений Университета, выполняющее учебные, методические и научно-исследовательские функции. Обеспечивает учебный, научный и воспитательный процесс.</p>
-    </section>
-    
     <main>
-        <section class="news">
+        <section id="home">
+            <h1>Музей ГУУ</h1>
+            <p class="tagline">Музей истории и развития управления Государственного университета управления – одно из подразделений Университета...</p>
+        </section>
+
+        <section id="news" class="hidden">
             <h2>Новости</h2>
-            <div class="news-block">
-                <div class="news-text">
-                   <h3>Пройдет неделя музеев</h3>
-                    <p>Каждый день с 10 до 16</p>
-                </div>
-                <!-- Фото новости -->
-                <img src="static/money.jpg" alt="Фото для новости о неделе музеев">
-            </div>
+            <p>Последние новости...</p>
+        </section>
+
+        <section id="exhibits" class="hidden">
+            <h2>Экспонаты</h2>
+            <p>Информация об экспонатах...</p>
+        </section>
+
+        <section id="about" class="hidden">
+            <h2>О нас</h2>
+            <p>О музее...</p>
+        </section>
+
+        <section id="history" class="hidden">
+            <h2>История ГУУ</h2>
+            <p>История университета...</p>
         </section>
     </main>
+
+    <script>
+        // Скрываем все секции по умолчанию
+        const sections = document.querySelectorAll('main section');
+        sections.forEach(section => {
+            section.classList.add('hidden');
+        });
+
+        // Обработчик переключения секций
+        const links = document.querySelectorAll('.menu a');
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                // Показываем нужную секцию
+                sections.forEach(section => section.classList.add('hidden'));
+                targetSection.classList.remove('hidden');
+            });
+        });
+
+        // Показываем первую секцию по умолчанию
+        document.getElementById('home').classList.remove('hidden');
+    </script>
 </body>
 </html>
 
