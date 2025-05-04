@@ -1,117 +1,158 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: white;
-    color: #000;
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+background: white;
+color: #000;
 }
 
 header {
+position: fixed; /* Закрепляем шапку */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Чтобы было поверх всего остального */
+    background: #fff;
+    border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
-    background: #fff;
-    border-bottom: 1px solid #ccc;
+    padding: 1px 20px 1px 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo-title {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 
 .logo-title img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-.site-title {
-    font-size: 1.2em;
-    font-weight: bold;
+height: 80px;
+margin-right: 10px;
 }
 
 nav {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 
 .menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
 }
 
 .menu li {
-    margin: 0 15px;
+margin: 0 15px;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
+text-decoration: none;
+color: #00004d;
+font-weight: 600;
 }
 
 .lang-search {
-    margin-left: 30px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
+margin-left: 100px;
+display: flex;
+gap: 10px;
+align-items: center;
 }
 
 .search {
-    font-weight: bold;
+font-weight: bold;
 }
 
 .hero {
-    background: linear-gradient(to bottom, #aaa, #eee);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("static/fon.jpg");
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    padding: 80px 20px;
+    padding: 250px 20px;
+    color: white; 
 }
 
+
 .hero .tagline {
-    letter-spacing: 2px;
-    color: #333;
+letter-spacing: 4px;
+padding: 10px 50px;
+color: #ffffff;
 }
 
 .hero h1 {
-    font-size: 3em;
-    color: #111;
-    margin: 10px 0 0;
+font-size: 6em;
+color: #ffffff;
+margin: 1px 0 0;
 }
 
 main {
-    padding: 40px;
-    background: #fff;
+padding: 40px;
+background: #fff;
 }
 
 .news {
-    max-width: 1000px;
-    margin: auto;
+max-width: 1000px;
+margin: auto;
 }
 
 .news h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
+font-size: 1.8em;
+margin-bottom: 20px;
 }
 
 .news-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 30px;
+flex-wrap: wrap;
 }
 
 .news-text {
-    flex: 1;
+flex: 1;
 }
 
 .news-text h3 {
-    font-size: 1.3em;
-    font-weight: bold;
+font-size: 1.3em;
+font-weight: bold;
 }
 
 .news img {
-    max-width: 300px;
-    border-radius: 10px;
+max-width: 300px;
+border-radius: 10px;
+}
+/\* Пример стилизации меню \*/
+nav ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: space-around;
+}
+
+nav ul li {
+margin-right: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+font-size: 16px;
+color: #333;
+}
+
+/\* Стили для секций \*/
+section {
+padding: 100px 20px;
+border-bottom: 1px solid #ddd;
+}
+
+/\* Активный элемент меню \*/
+nav ul li a.active {
+font-weight: bold;
+color: #007BFF;
+}
+
+/\* Простая анимация перехода \*/
+html {
+scroll-behavior: smooth;
 }
