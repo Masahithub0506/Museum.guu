@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -16,15 +15,15 @@
         <div class="logo-title">
             <!-- Логотип -->
             <img src="static/logo.jpg" alt="Логотип Музея ГУУ">
-            <span class="site-title">Музей ГУУ</span>
         </div>
-        <nav>
+        <nav class="fixed-nav">
             <ul class="menu">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Экспонаты</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">История ГУУ</a></li>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#exhibits">Экспонаты</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#history">История ГУУ</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
             <div class="lang-search">
                 <a href="#">En</a> | <a href="#">Rus</a>
@@ -32,29 +31,41 @@
         </nav>
     </header>
 
-```
-<section class="hero">
-    <h1>Музей ГУУ</h1>
-    <p class="tagline">Музей истории и развития управления Государственного университета управления – одно из подразделений Университета, выполняющее учебные, методические и научно-исследовательские функции.
-        Обеспечивает учебный, научный и воспитательный процесс.</p>
-</section>
-
-<main>
-    <section class="news">
-        <h2>Новости</h2>
-        <div class="news-block">
-            <div class="news-text">
-               <h3>Пройдет неделя музеев</h3>
-                <p>Каждый день с 10 до 16</p>
-            </div>
-            <!-- Фото новости -->
-            <img src="static/money.jpg" alt="Фото для новости о неделе музеев">
-        </div>
+    <section class="hero" id="home">
+        <h1>Музей ГУУ</h1>
+        <p class="tagline">Музей истории и развития управления Государственного университета управления – одно из подразделений Университета, выполняющее учебные, методические и научно-исследовательские функции. Обеспечивает учебный, научный и воспитательный процесс.</p>
     </section>
-</main>
-```
 
+    <main>
+        <section class="news" id="news">
+            <h2>Новости</h2>
+            <div class="news-block">
+                <div class="news-text">
+                    <h3>С 8 марта!</h3>
+                    <p>В этот добрый весенний день Музей ГУУ спешит поздравить всех дам с 8 марта, с началом весны, и пожелать радости и эмоций от посещения культурных и исторических пространств, чтобы это было как предлагает картинка</p>
+                </div>
+                <!-- Фото новости -->
+                <img src="C:\Users\User\Museum.guu\.git\static\rose.jpg" alt="Фото для новости о неделе музеев">
+            </div>
+        </section>
+
+        <!-- Пример других секций -->
+        <section class="exhibits" id="exhibits">
+            <h2>Экспонаты</h2>
+        </section>
+        <section class="about" id="about">
+            <h2>О нас</h2>
+        </section>
+        <section class="history" id="history">
+            <h2>История ГУУ</h2>
+        </section>
+        <section class="contacts" id="contacts">
+            <h2>Контакты</h2>
+        </section>
+    </main>
+
+    <script src="static/script.js"></script>
 </body>
-</html> 
+</html>
 
 
