@@ -36,6 +36,51 @@ nav {
   align-items: center;
 }
 
+
+
+
+/* Скрываем бургер на десктопе */
+.burger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #00004d;
+}
+
+/* Адаптивный стиль */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
+  .menu {
+    display: none; /* скрыто по умолчанию */
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+
+  .menu.show {
+    display: flex; /* показать при активации */
+  }
+
+  nav {
+    width: 100%;
+  }
+} 
+
+
+
+
+
+
+
+
 .menu {
   display: flex;
   list-style: none;
