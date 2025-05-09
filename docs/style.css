@@ -141,13 +141,13 @@ font-size: 16px;
 color: #333;
 }
 
-/\* Стили для секций \*/
+/* Стили для секций */
 section {
 padding: 100px 20px;
 border-bottom: 1px solid #ddd;
 }
 
-/\* Активный элемент меню \*/
+/* Активный элемент меню */
 nav ul li a.active {
 font-weight: bold;
 color: #007BFF;
