@@ -1,159 +1,79 @@
-body {
-margin: 0;
-font-family: 'Segoe UI', sans-serif;
-background: white;
-color: #000;
-}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
 
-header {
-position: fixed; /* Закрепляем шапку */
-    top: 0;
-    left: 0;
+  .logo-title {
+    justify-content: center;
     width: 100%;
-    z-index: 1000; /* Чтобы было поверх всего остального */
-    background: #fff;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
+  }
+
+  .logo-title img {
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
     align-items: center;
-    padding: 1px 20px 1px 150px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+  }
 
-.logo-title {
-display: flex;
-align-items: center;
-}
+  .menu li {
+    margin: 10px 0;
+  }
 
-.logo-title img {
-height: 80px;
-margin-right: 10px;
-}
+  .lang-search {
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
 
-nav {
-display: flex;
-align-items: center;
-}
+  .hero {
+    padding: 120px 20px;
+  }
 
-.menu {
-display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
-}
+  .hero h1 {
+    font-size: 2.5em;
+  }
 
-.menu li {
-margin: 0 15px;
-}
+  .hero .tagline {
+    padding: 0;
+    font-size: 1em;
+  }
 
-.menu a {
-text-decoration: none;
-color: #00004d;
-font-weight: 600;
-}
+  .news {
+    padding: 20px;
+  }
 
-.lang-search {
-margin-left: 100px;
-display: flex;
-gap: 10px;
-align-items: center;
-}
-
-.search {
-font-weight: bold;
-}
-
-.hero {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("static/fon.jpg");
-    background-size: cover;
-    background-position: center;
+  .news h2 {
+    font-size: 2em;
     text-align: center;
-    padding: 250px 20px;
-    color: white; 
-}
+  }
 
+  .news-block {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 
-.hero .tagline {
-letter-spacing: 4px;
-padding: 10px 340px;
-color: #ffffff;
-}
+  .news img {
+    max-width: 100%;
+    height: auto;
+  }
 
-.hero h1 {
-font-size: 6em;
-color: #ffffff;
-margin: 1px 0 0;
-}
-
-main {
-padding: 40px;
-background: #fff;
-}
-
-.news {
-height: 1000px;
-max-width: 1000px;
-margin: auto;
-}
-
-.news h2 {
-font-size: 4em;
-margin-bottom: 30px;
-}
-
-.news-block {
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 320px;
-flex-wrap: wrap;
-}
-
-.news-text {
-flex: 1;
-}
-
-.news-text h3 {
-font-size: 2em;
-font-weight: bold;
-}
-
-.news img {
-max-width: 300px;
-border-radius: 10px;
-}
-/\* Пример стилизации меню \*/
-nav ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-display: flex;
-justify-content: space-around;
-}
-
-nav ul li {
-margin-right: 20px;
-}
-
-nav ul li a {
-text-decoration: none;
-font-size: 16px;
-color: #333;
-}
-
-/* Стили для секций */
-section {
-padding: 100px 20px;
-border-bottom: 1px solid #ddd;
-}
-
-/* Активный элемент меню */
-nav ul li a.active {
-font-weight: bold;
-color: #007BFF;
-}
-
-/* Простая анимация перехода */ 
-html {
-scroll-behavior: smooth;
+  .news-text h3 {
+    font-size: 1.5em;
+    text-align: center;
+  }
 }
