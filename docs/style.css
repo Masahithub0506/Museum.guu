@@ -153,12 +153,12 @@ font-weight: bold;
 color: #007BFF;
 }
 
-/\* Простая анимация перехода \*/
+/* Простая анимация перехода */ 
 html {
 scroll-behavior: smooth;
 }
 
-/\* Простая анимация перехода \*/
+/* комментарий */
 html {
 scroll-behavior: smooth;
 }
