@@ -16,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 1px 20px 1px 150px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
 }
@@ -27,7 +27,7 @@ header {
 }
 
 .logo-title img {
-  height: 60px;
+  height: 80px;
   margin-right: 10px;
 }
 
@@ -90,7 +90,7 @@ nav {
 }
 
 .menu li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .menu a {
@@ -116,19 +116,20 @@ nav {
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 200px 20px 100px;
+  padding: 250px 20px;
   color: white;
 }
 
 .hero .tagline {
-  letter-spacing: 2px;
-  padding: 10px 20px;
+  letter-spacing: 4px;
+  padding: 10px 340px;
   color: #ffffff;
 }
 
 .hero h1 {
-  font-size: 4em;
-  margin: 10px 0;
+  font-size: 6em;
+  color: #ffffff;
+  margin: 1px 0 0;
 }
 
 main {
@@ -137,12 +138,13 @@ main {
 }
 
 .news {
+  height: 1000px;
   max-width: 1000px;
   margin: auto;
 }
 
 .news h2 {
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -151,7 +153,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 320px;
   flex-wrap: wrap;
 }
 
