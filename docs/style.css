@@ -1,3 +1,164 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  color: #000;
+}
+
+header {
+  position: fixed; /* Закрепляем шапку */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Чтобы было поверх всего остального */
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 20px 1px 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #00004d;
+  font-weight: 600;
+}
+
+.lang-search {
+  margin-left: 100px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search {
+  font-weight: bold;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("static/fon.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 250px 20px;
+  color: white; 
+}
+
+.hero .tagline {
+  letter-spacing: 4px;
+  padding: 10px 340px;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 6em;
+  color: #ffffff;
+  margin: 1px 0 0;
+}
+
+main {
+  padding: 40px;
+  background: #fff;
+}
+
+.news {
+  height: 1000px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.news h2 {
+  font-size: 4em;
+  margin-bottom: 30px;
+}
+
+.news-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 320px;
+  flex-wrap: wrap;
+}
+
+.news-text {
+  flex: 1;
+}
+
+.news-text h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.news img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Пример стилизации меню */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Стили для секций */
+section {
+  padding: 100px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Активный элемент меню */
+nav ul li a.active {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+/* Простая анимация перехода */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Адаптивные стили для мобильных устройств */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -41,6 +202,9 @@
 
   .hero {
     padding: 120px 20px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
   .hero h1 {
