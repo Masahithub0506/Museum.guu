@@ -87,7 +87,7 @@ nav {
 
 /*  фон+Музей ГУУ  */
 .hero {
-  background-image: url("docs/static/fon.jpg"); 
+  /* background-image: url("docs/static/fon.jpg"); */
   background-color: #20426C;
   background-size: cover;
   background-position: center;
