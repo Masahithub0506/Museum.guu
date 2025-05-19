@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "PT Root UI", sans-serif;
+  font-style: normal;
+  background: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+}
+
+/* шапка для меню   */
+header {
+  position: fixed; /* Закрепляем шапку */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Чтобы было поверх всего остального */
+  background: #fff; /* Белый фон */
+  border-bottom: 1px solid #ccc; /* Нижняя граница */
+  display: flex; /* Используем Flexbox */
+  justify-content: space-between; /* Пространство между элементами */
+  align-items: center; /* Выравнивание по центру по вертикали */
+  padding: 1px 30px;
+  box-shadow: 0 2px 8px rgba(243, 241, 241, 0.1); /* Лёгкая тень */
+}
+
+
+
+/*    */
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+/*    */
+.logo-title img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+/*    */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/*    */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*  между меню  */
+.menu li {
+  margin: 0 15px;
+}
+
+/*   меню именно текст */
+.menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #20426C; /* начальный цвет */
+  transition: color 0.3s ease; /* плавный переход */
+}
+
+.menu a:hover {
+  color: #E51E40; /* цвет при наведении мышки менеятся */
+}
+
+
+
+/*    */
+.lang-search {
+  margin-left: 100px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/*    */
+.search {
+  font-weight: bold;
+}
+
+/*  фон+Музей ГУУ  */
+.hero {
+  background-image: url("static/fon.jpg"); 
+  /*background-color: #20426C;*/
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 200px 20px;
+  color: white; 
+}
+
+/*    */
+.hero .tagline {
+  letter-spacing: 4px;
+  padding: 10px 340px;
+  color: #ffffff;
+}
+
+/*    */
+.hero h1 {
+  font-size: 6em;
+  color: #ffffff;
+  margin: 1px 0 0;
+}
+
+/*    */
+main {
+  padding: 60px;
+  background: #fff;
+}
+
+
+
+
+
+/* Стили для секций */
+section {
+  padding: 100px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Активный элемент меню */
+nav ul li a.active {
+  font-weight: bold;
+    color: hsl(212, 79%, 13%);
+
+}
+
+/* Простая анимация перехода */
+html {
+  scroll-behavior: smooth;
+}
+
+/*  для меню кнопки  */
+.burger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #20426C;
+  cursor: pointer;
+  margin-left: 20px;
+  z-index: 101;
+}
