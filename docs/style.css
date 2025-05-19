@@ -140,4 +140,14 @@ html {
   scroll-behavior: smooth;
 }
 
-
+/*  для меню кнопки  */
+.burger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #20426C;
+  cursor: pointer;
+  margin-left: 20px;
+  z-index: 101;
+}
