@@ -50,7 +50,7 @@ nav {
 .menu {
   display: flex;
   list-style: none;
-  margin: 0px 10px 0px 10px;
+  margin: 0px;
   padding: 0px 15px 0px 10px;
 }
 
@@ -101,8 +101,10 @@ nav {
 
 /*    */
 .hero .tagline {
-  letter-spacing: 4px;
-  padding: 10px 340px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 10px 320px 10px 320px;
   color: #ffffff;
 }
 
