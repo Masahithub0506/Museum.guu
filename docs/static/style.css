@@ -173,18 +173,69 @@ body {
   line-height: normal;
 }
 
-    header nav {
-      background: #20426C;
-      padding: 10px;
-      text-align: center;
-    }
+/* шапка для меню   */
+header {
+  position: fixed; /* Закрепляем шапку */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Чтобы было поверх всего остального */
+  background: #fff; /* Белый фон */
+  border-bottom: 1px solid #ccc; /* Нижняя граница */
+  display: flex; /* Используем Flexbox */
+  justify-content: space-between; /* Пространство между элементами */
+  align-items: center; /* Выравнивание по центру по вертикали */
+  padding: 0px 15px 0px 10px;
+  box-shadow: 0 2px 8px rgba(243, 241, 241, 0.1); /* Лёгкая тень */
+}
 
-    header nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 600;
-    }
+
+
+/*    */
+.logo-title {
+  display: flex;
+  align-items: center;
+  line-height: normal;
+}
+
+/*    */
+.logo-title img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+/*    */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/*    */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px 15px 0px 10px;
+}
+
+/*  между меню  */
+.menu li {
+  margin: 0 15px;
+}
+
+/*   меню именно текст */
+.menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #20426C; /* начальный цвет */
+  transition: color 0.3s ease; /* плавный переход */
+}
+
+.menu a:hover {
+  color: #E51E40; /* цвет при наведении мышки менеятся */
+}
+
+
 
     h1 {
       text-align: center;
