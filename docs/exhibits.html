@@ -14,13 +14,30 @@
     <link rel="stylesheet" href="static/style.css">
    
 
-  <header>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="exhibits.html">Экспонаты</a>
-    </nav>
-  </header>
 
+  <header>
+        <div class="logo-title">
+            <!-- Логотип -->
+            <img src="static/logo.jpg" alt="Логотип Музея ГУУ">
+        </div>
+        <nav class="fixed-nav">
+            <ul class="menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#history">История ГУУ</a></li>
+                <li><a href="#exhibits">Экспонаты</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+                <button class="burger" onclick="toggleMenu()">☰</button>
+            
+           <!--  <div class="lang-search">
+                <a href="#">En</a> | <a href="#">Rus</a>
+            </div> -->
+
+        </nav>
+    </header>
+
+  
   <main>
     <h1>Наши экспонаты</h1>
     <div class="gallery">
