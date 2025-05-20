@@ -154,3 +154,98 @@ html {
   margin-left: 20px;
   z-index: 101;
 }
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: "PT Root UI", sans-serif;
+  font-style: normal;
+  background: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+}
+
+    header nav {
+      background: #20426C;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery-item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      cursor: pointer;
+    }
+
+    .gallery-item p {
+      padding: 10px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    /* Lightbox overlay */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
