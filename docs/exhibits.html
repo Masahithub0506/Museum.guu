@@ -36,32 +36,28 @@
   
   <main>
     <h1>Наши экспонаты</h1>
-    <div class="gallery">
-      <div class="gallery-item">
-        <a href="#img1"><img src="images/item1.jpg" alt="Экспонат 1"></a>
-        <p>Античная ваза</p>
-      </div>
-      <div class="gallery-item">
-        <a href="#img2"><img src="images/item2.jpg" alt="Экспонат 2"></a>
-        <p>Средневековый меч</p>
-      </div>
-      <div class="gallery-item">
-        <a href="#img3"><img src="images/item3.jpg" alt="Экспонат 3"></a>
-        <p>Картина XIX века</p>
-      </div>
-    </div>
   </main>
 
-  <!-- Lightbox modals -->
-  <div id="img1" class="lightbox">
-    <a href="#"><img src="images/item1.jpg" alt="Античная ваза"></a>
-  </div>
-  <div id="img2" class="lightbox">
-    <a href="#"><img src="images/item2.jpg" alt="Средневековый меч"></a>
-  </div>
-  <div id="img3" class="lightbox">
-    <a href="#"><img src="images/item3.jpg" alt="Картина XIX века"></a>
-  </div>
 
+<script>
+const images = ['static/pic1.png', 'static/pic2.png', 'static/rose.jpg'];
+let currentIndex = 0;
+
+function showImage(index) {
+  const img = document.getElementById('gallery-image');
+  img.src = images[index];
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
+}
+
+</script>
 </body>
 </html>
