@@ -39,6 +39,12 @@
   </main>
 
 
+  <div class="gallery-container">
+  <button class="prev" onclick="prevImage()">←</button>
+  <img id="gallery-image" src="static/pic1.png" alt="Gallery">
+  <button class="next" onclick="nextImage()">→</button>
+</div>
+
 <script>
 const images = ['static/logo.jpg', 'static/historic.jpg', 'static/fon.jpg'];
 let currentIndex = 0;
