@@ -278,6 +278,7 @@ nav {
 .ex {
     color: #ffffff; /* начальный цвет */
   transition: color 0.3s ease; /* плавный переход */
+  background-color: #ffffff;
 }
 
 .ex :hover {
