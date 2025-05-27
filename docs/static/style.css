@@ -239,31 +239,33 @@ nav {
 
 
 .history{
-  text-align: center;
-  background: #20426C; 
-  background-size: cover;
-  background-position: center;
-  flex-grow: 1;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  padding: 20px 20px;
-  color: white;
-  margin: 10px 0px;
+  background-attachment: fixed;
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+ color: white;
 }
 
 .history1{
-text-align: center;
-  background: #20426C; 
-  background-size: cover;
-  background-position: center;
-  flex-grow: 1;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding: 20px 20px;
-  color: white;
-  margin: 10px 0px;
+  background-attachment: fixed;
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+ color: white;
 }
 
 
