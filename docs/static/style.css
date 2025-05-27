@@ -128,7 +128,7 @@ main {
 /* Стили для секций */
 section {
   padding: 100px 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
 }
 
 /* Активный элемент меню */
@@ -274,8 +274,11 @@ nav {
  color: white;
  width: 100%;
  height: 400px;
-
+  a{
+    color: white;}
 }
+
+
 
 .about {
  text-align: center;
@@ -306,7 +309,6 @@ nav {
 }
 .telegram img {
   height: 30px;
-  margin-right: 0px;
 }
 
 
