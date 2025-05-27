@@ -238,10 +238,44 @@ nav {
 
 
 
+.history{
+  text-align: center;
+  background: #20426C; 
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+  color: white;
+  margin: 10px 0px;
+}
+
+.history1{
+text-align: center;
+  background: #20426C; 
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 20px 20px;
+  color: white;
+  margin: 10px 0px;
+}
+
+
+
+
+
 .contacts {
 text-align: center;
 border: 5px solid #20426C;
 padding: 10px;
+  width: 100%;
+  height: 100%;
 }
 .telegram img {
   height: 60px;
