@@ -274,9 +274,16 @@ nav {
  color: white;
  width: 100%;
  height: 400px;
-  a{
-    color: white;}
 }
+.ex {
+    color: #20426C; /* начальный цвет */
+  transition: color 0.3s ease; /* плавный переход */
+}
+
+.ex :hover {
+  color: #E51E40; /* цвет при наведении мышки менеятся */
+}
+
 
 
 
