@@ -276,7 +276,7 @@ nav {
  height: 400px;
 }
 .ex {
-    color: #20426C; /* начальный цвет */
+    color: #ffffff; /* начальный цвет */
   transition: color 0.3s ease; /* плавный переход */
 }
 
