@@ -308,9 +308,16 @@ nav {
 
   font-size: 14px;
 }
-.links img{
-  height: 1px;
-  display: flex;
+.links img {
+  height: 40px;          /* нормальная высота иконок — можешь изменить под свой дизайн */
+  width: auto;           /* сохраняет пропорции изображения */
+  margin-right: 10px;    /* небольшой отступ между иконками */
+  cursor: pointer;       /* курсор-рука при наведении */
+  transition: transform 0.2s ease; /* плавная анимация */
+}
+
+.links img:hover {
+  transform: scale(1.1);  /* лёгкое увеличение при наведении */
 }
 
 
