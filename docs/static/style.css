@@ -308,8 +308,10 @@ nav {
 
   font-size: 14px;
 }
-.telegram img {
+.links {
   height: 30px;
+  width: 25px;
+  display: flex;
 }
 
 
