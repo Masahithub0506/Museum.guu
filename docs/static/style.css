@@ -306,19 +306,22 @@ nav {
 
 
 .contacts {
+  background: #20426C; 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  height: auto; /* или 100%, выберите одно */
   display: block;
   visibility: visible;
   position: relative;
-  width: 100%;
-  height: auto; /* или 100%, выберите одно */
   pointer-events: all;
-  opacity: 1;
+  <!--opacity: 1; -->
   margin: 0;
   z-index: 1;
   padding: 35px 0 45px;
-  text-align: center;
   background-size: cover;
-  background-color: #20426C;
+
   color: #fff;
 
   font-size: 14px;
