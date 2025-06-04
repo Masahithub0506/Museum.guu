@@ -380,7 +380,7 @@ button {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 8px 10px;
     position: relative;
   }
 
@@ -398,7 +398,7 @@ button {
     color: #20426C;
     cursor: pointer;
     z-index: 102;
-    margin-right: 10px; /* отступ от правого края */
+    margin-right: 3px; /* отступ от правого края */
   }
 
   /* Меню выпадает под бургером справа */
