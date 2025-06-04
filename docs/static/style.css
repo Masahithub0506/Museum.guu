@@ -378,49 +378,47 @@ button {
     font-size: 16px;
   }
 
+
   header {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 10px;
-    position: relative;
-
+    align-items: center;
+    padding: 10px 15px;
   }
 
   .logo-title img {
     height: 50px;
   }
 
-    .burger {
+  /* Показываем бургер справа */
+  .burger {
     display: block;
-    justify-content: flex-end;
     font-size: 28px;
     background: none;
     border: none;
     color: #20426C;
     cursor: pointer;
-    z-index: 102;
-    padding-right: 10px;
+    z-index: 101;
+    margin-left: auto;
   }
 
+  /* Скрытое меню, появляется при нажатии */
   .menu {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     display: none;
     background-color: #fff;
-    padding-left: 2px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 60px; /* отступ от хедера */
+    right: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
   }
 
   .menu li {
     margin: 10px 0;
-  }
-
-  .menu a {
-    font-size: 22px;
-    color: #20426C;
-    font-weight: 600;
-    text-decoration: none;
   }
 
   .menu.active {
