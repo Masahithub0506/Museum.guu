@@ -406,7 +406,7 @@ button {
   /* Меню выпадает под бургером справа */
   .menu {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     position: absolute;
     top: 60px; /* чуть ниже хедера */
     right: 10px;
@@ -415,7 +415,7 @@ button {
     width: auto;
     padding: 10px 30px;
     display: none;
-    border-radius: 8px;
+    border-radius: 7px;
     z-index: 101;
   }
 
