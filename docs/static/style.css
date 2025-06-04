@@ -378,8 +378,10 @@ button {
 
   header {
     flex-direction: row;
-    align-items: space-between;
-    padding: rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    position: relative;
   }
 
 
@@ -388,41 +390,49 @@ button {
   }
 
   /* Показываем бургер справа */
-  .burger {
+   .burger {
     display: block;
     font-size: 28px;
     background: none;
     border: none;
     color: #20426C;
     cursor: pointer;
-    z-index: 101;
-    margin-left: rem;
-    paddongs: rem;
-   
+    z-index: 102;
+    margin-right: 10px; /* отступ от правого края */
   }
 
-  /* Скрытое меню, появляется при нажатии */
+  /* Меню выпадает под бургером справа */
   .menu {
     flex-direction: column;
     align-items: flex-end;
-    width: 100%;
-    display: none;
-    background-color: #fff;
-    padding: 10px 20px;
     position: absolute;
-    top: 60px; /* отступ от хедера */
-    right: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    z-index: 100;
+    top: 60px; /* чуть ниже хедера */
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: auto;
+    padding: 10px 20px;
+    display: none;
+    border-radius: 8px;
+    z-index: 101;
   }
 
   .menu li {
-    margin: 10px 0;
+    margin: 8px 0;
+    text-align: right;
+  }
+
+  .menu a {
+    color: #20426C;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
   }
 
   .menu.active {
     display: flex;
   }
+
 
   .lang-search {
     margin-left: 0;
