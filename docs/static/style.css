@@ -374,13 +374,14 @@ button {
 @media (max-width: 768px) {
   body {
     font-size: 16px;
+  
   }
 
   header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 10px;
+    padding: 8px 5px;
     position: relative;
   }
 
@@ -398,7 +399,7 @@ button {
     color: #20426C;
     cursor: pointer;
     z-index: 102;
-    margin-right: 3px; /* отступ от правого края */
+    margin-right: 0; /* отступ от правого края */
   }
 
   /* Меню выпадает под бургером справа */
