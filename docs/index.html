@@ -27,7 +27,9 @@
                 <li><a href="#about">О нас</a></li>
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
-                <button class="burger" onclick="toggleMenu()">☰</button>
+               <!-- <button class="burger" onclick="toggleMenu()">☰</button> -->
+                 <button class="burger">&#9776;</button>
+
             
            <!--  <div class="lang-search">
                 <a href="#">En</a> | <a href="#">Rus</a>
@@ -80,6 +82,18 @@
     </main>
 
     <script src="static/script.js"></script>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.querySelector(".burger");
+    const menu = document.querySelector(".menu");
+
+    burger.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  });
+</script>
+
 </body>
 </html>
 
