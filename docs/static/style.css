@@ -379,7 +379,7 @@ button {
   header {
     flex-direction: row;
     align-items: space-between;
-    padding: 10px;
+    padding: rem;
   }
 
 
@@ -397,6 +397,7 @@ button {
     cursor: pointer;
     z-index: 101;
     margin-left: rem;
+    paddongs: rem;
    
   }
 
