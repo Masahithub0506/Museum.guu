@@ -399,7 +399,7 @@ button {
     color: #20426C;
     cursor: pointer;
     z-index: 101;
-    margin-left: auto;
+ 
     justify-content: flex-end;
   }
 
