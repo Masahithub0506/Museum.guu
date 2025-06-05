@@ -383,7 +383,7 @@ button {
     flex-direction: row;
    
     align-items: center;
-    padding: 10px 10px 10px 8px;
+    padding: 10px 10px 10px 15px;
   }
 
   .logo-title img {
