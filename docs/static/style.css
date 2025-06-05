@@ -383,7 +383,7 @@ button {
     flex-direction: row;
    
     align-items: center;
-    padding: 10px 15px 10px 40px;
+    padding: 10px 10px 10px 15px;
   }
 
   .logo-title img {
@@ -416,6 +416,7 @@ button {
     right: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 100;
+    margin: 0px 10px;
   }
 
   .menu li {
