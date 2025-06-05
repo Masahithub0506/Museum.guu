@@ -19,7 +19,7 @@ header {
   background: #fff; /* Белый фон */
   border-bottom: 1px solid #ccc; /* Нижняя граница */
   display: flex; /* Используем Flexbox */
-   /* Пространство между элементами */
+  justify-content: space-between/* Пространство между элементами */
   align-items: center; /* Выравнивание по центру по вертикали */
   padding: 0px 15px 0px 10px;
   box-shadow: 0 2px 8px rgba(243, 241, 241, 0.1); /* Лёгкая тень */
@@ -381,7 +381,7 @@ button {
 
   header {
     flex-direction: row;
-    justify-content: space-between;
+   
     align-items: center;
     padding: 10px 15px;
   }
