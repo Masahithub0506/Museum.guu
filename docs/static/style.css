@@ -474,14 +474,35 @@ button {
     height: auto;
   }
 
-  .contacts {
-    padding: 20px 10px;
-  }
+.contacts {
+  background: #20426C; 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  height: auto; /* или 100%, выберите одно */
+  display: block;
+  visibility: visible;
+  position: relative;
+  pointer-events: all;
+  <!--opacity: 1; -->
+  margin: 0;
+  z-index: 1;
+  padding: 35px 0 45px;
+  background-size: cover;
 
-  .links img {
-    height: 32px;
-    margin-right: 8px;
-  }
+  color: #fff;
+
+  font-size: 14px;
+}
+.links img {
+   height: 32px;          /* нормальная высота иконок — можешь изменить под свой дизайн */
+  width: auto;           /* сохраняет пропорции изображения */
+  margin-right: 8px;    /* небольшой отступ между иконками */
+  cursor: pointer;       /* курсор-рука при наведении */
+  transition: transform 0.2s ease; /* плавная анимация */
 }
 
-
+.links img:hover {
+  transform: scale(1.1);  /* лёгкое увеличение при наведении */
+}
