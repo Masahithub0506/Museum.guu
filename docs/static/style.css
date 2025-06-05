@@ -383,7 +383,7 @@ button {
     flex-direction: row;
    
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 15px 10px 40px;
   }
 
   .logo-title img {
@@ -400,6 +400,7 @@ button {
     cursor: pointer;
     z-index: 101;
     margin-left: auto;
+    padding
   }
 
   /* Скрытое меню, появляется при нажатии */
