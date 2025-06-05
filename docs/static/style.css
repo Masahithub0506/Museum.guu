@@ -104,7 +104,9 @@ nav {
   font-size: 20px;
   text-align: center;
   letter-spacing: 1px;
-  padding: 10px 320px 10px 320px;
+  padding: 10px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
   color: #ffffff;
 }
 
@@ -117,7 +119,7 @@ nav {
 
 /*    */
 main {
-  padding: 60px;
+  padding: 60px 20px;
   background: #fff;
 }
 
@@ -291,7 +293,16 @@ nav {
 } 
 -->
 
-
+.exhibits-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
 
 
 
