@@ -400,7 +400,7 @@ button {
     cursor: pointer;
     z-index: 101;
     margin-left: auto;
-    padding
+    justify-content: flex-end;
   }
 
   /* Скрытое меню, появляется при нажатии */
