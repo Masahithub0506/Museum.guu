@@ -61,6 +61,51 @@
         <!-- Пример других секций -->
         <section class="exhibits" id="exhibits">
             <h2>Экспонаты</h2>
+             <div class="alex">
+  <!-- Левая часть: галерея -->
+  <div class="alex-gallery-container">
+    <button class="prev" onclick="prevImage()">←</button>
+    <img id="alex1-img" src="static/alex1.png" alt="Фото">
+    <button class="next" onclick="nextImage()">→</button>
+  </div>
+  <!-- Правая часть: текст -->
+  <div id="alex-text">
+    <p>
+      Александровское коммерческое училище (1880–1917) является ключевым экспонатом,
+      иллюстрирующим становление коммерческого и управленческого образования в России.
+      Его создание стало ответом на острую потребность империи в квалифицированных
+      кадрах для динамично развивающейся экономики. Училище предлагало новаторскую,
+      глубоко практико-ориентированную программу, включающую бухгалтерию,
+      коммерческое право, политэкономию и иностранные языки. Оно стало одним из первых
+      учреждений, систематически готовящих высококлассных специалистов для бизнеса.
+      Деятельность училища значительно повысила престиж и уровень коммерческого
+      образования, заложив фундамент для развития целой системы управленческого и
+      экономического обучения. После революции училище трансформировалось, пройдя
+      через ряд переименований и преобразований. В конечном итоге, эти исторические
+      корни привели к созданию современного Государственного университета управления
+      (ГУУ). Таким образом, Александровское училище является непосредственной
+      предшественницей одного из ведущих управленческих вузов России, символизируя
+      эволюцию отечественной школы менеджмента.
+    </p>
+  </div>
+</div>
+<script>
+const images = ['static/alex1.png', 'static/alex2.png', 'static/alex3.png'];
+let currentIndex = 0;
+function showImage(index) {
+  document.getElementById('alex1-img').src = images[index];
+}
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+}
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
+}
+showImage(currentIndex);
+</script>
+</div>
          <!--  <button onclick="document.location='exhibits.html'" target="_blank" style="color: white; background-color: red";>Подробнее»</button>  -->
             <a href="exhibits.html" target="_blank" class="exhibits-button">Подробнее»</a>
             <!-- <div class="ex"><a href="exhibits.html">Подробнее></a></div>-->
