@@ -105,7 +105,6 @@ nav {
   text-align: center;
   letter-spacing: 1px;
   padding: 10px 20px;
-  max-width: 1000px;
   margin: 0 auto;
   color: #ffffff;
 }
@@ -247,7 +246,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-  width: 100%;
+    width: 100%;
     overflow: hidden;
     position: relative;
     text-align: center;
