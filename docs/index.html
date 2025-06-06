@@ -106,6 +106,47 @@ function nextImage() {
 showImage(currentIndex);
 </script>
 </div>
+
+
+<div class="revolution">
+  <!-- Левая часть: текст -->
+  <div id="revolution-text">
+    <p>
+      Экспонат посвящён революционным преобразованиям в системе образования. После Октябрьской революции 1917 г. создаются новые учебные заведения практической направленности — техникумы. Преемником Александровского коммерческого училища в 1917 г. стал Московский промышленно-экономический техникум (МПЭТ).<br><br>
+      С 30 апреля 1919 г. начинается история университета. На базе МПЭТ учреждается высшее учебное заведение — Московский промышленно-экономический практический институт (в 1923 г. из названия убрали слово "практический"). Это отражало стремление к более глубокому и системному образованию специалистов в области экономики и промышленности. Институт стал важным шагом на пути создания новой модели высшего образования, ориентированной на практику и социалистические идеалы.<br><br>
+      Данный экспонат демонстрирует материалы того времени, рассказывая об этапах становления учебного заведения.
+    </p>
+  </div>
+
+  <!-- Правая часть: галерея -->
+  <div class="revolution-gallery-container">
+    <button class="prev" onclick="prevRevImage()">←</button>
+    <img id="revolution-img" src="static/rev1.png" alt="Фото">
+    <button class="next" onclick="nextRevImage()">→</button>
+  </div>
+</div>
+<script>
+const revImages = ['static/rev1.png', 'static/rev2.png', 'static/rev3.png'];
+let revIndex = 0;
+
+function showRevImage(index) {
+  document.getElementById('revolution-img').src = revImages[index];
+}
+
+function prevRevImage() {
+  revIndex = (revIndex - 1 + revImages.length) % revImages.length;
+  showRevImage(revIndex);
+}
+
+function nextRevImage() {
+  revIndex = (revIndex + 1) % revImages.length;
+  showRevImage(revIndex);
+}
+
+showRevImage(revIndex);
+</script>
+            
+            
          <!--  <button onclick="document.location='exhibits.html'" target="_blank" style="color: white; background-color: red";>Подробнее»</button>  -->
             <a href="exhibits.html" target="_blank" class="exhibits-button">Подробнее»</a>
             <!-- <div class="ex"><a href="exhibits.html">Подробнее></a></div>-->
