@@ -379,7 +379,38 @@ button {
 }
 
 
+.contacts {
+  background: #20426C; 
+ /*background-size: cover;
+  background-position: center; */
 
+  text-align: center;
+  width: 100%;
+  height: auto; /* или 100%, выберите одно */
+  display: block;
+  visibility: visible;
+  position: relative;
+  pointer-events: all;
+  margin: 0;
+  z-index: 1;
+  padding: 35px 0 45px;
+  background-size: cover;
+
+  color: #fff;
+  padding: 35px 20px 45px;
+  font-size: 14px;
+}
+.links img {
+  height: 40px;          /* нормальная высота иконок — можешь изменить под свой дизайн */
+  width: auto;           /* сохраняет пропорции изображения */
+  margin-right: 10px;    /* небольшой отступ между иконками */
+  cursor: pointer;       /* курсор-рука при наведении */
+  transition: transform 0.2s ease; /* плавная анимация */
+}
+
+.links img:hover {
+  transform: scale(1.1);  /* лёгкое увеличение при наведении */
+}
 
 
 
@@ -469,6 +500,7 @@ button {
   .exhibits,
   .about {
     height: auto;
+    width: 100%;
     padding: 12px 10px;
     text-align: center;
     margin: 0;
@@ -505,7 +537,7 @@ button {
   font-size: 14px;
 }
 .links img {
-   height: 32px;          /* нормальная высота иконок — можешь изменить под свой дизайн */
+  height: 32px;          /* нормальная высота иконок — можешь изменить под свой дизайн */
   width: auto;           /* сохраняет пропорции изображения */
   margin-right: 8px;    /* небольшой отступ между иконками */
   cursor: pointer;       /* курсор-рука при наведении */
