@@ -278,6 +278,40 @@ nav {
  height: 400px;
 }
 
+.alex {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.alex-gallery-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#alex1-img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#alex-text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  max-width: 600px;
+  text-align: left;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
 <!--
 .ex:link, ex:visited {
   background-color: #f44336;
