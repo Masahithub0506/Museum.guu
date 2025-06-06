@@ -65,7 +65,7 @@
   <!-- Левая часть: галерея -->
   <div class="alex-gallery-container">
     <button class="prev" onclick="prevImage()">←</button>
-    <img id="alex1-img" src="static/alex1.png" alt="Фото">
+    <img id="alex1-img" src="static/alex1.jpg" alt="Фото">
     <button class="next" onclick="nextImage()">→</button>
   </div>
   <!-- Правая часть: текст -->
@@ -90,7 +90,7 @@
   </div>
 </div>
 <script>
-const images = ['static/alex1.png', 'static/alex2.png', 'static/alex3.png'];
+const images = ['static/alex1.jpg', 'static/alex2.png', 'static/alex3.png'];
 let currentIndex = 0;
 function showImage(index) {
   document.getElementById('alex1-img').src = images[index];
