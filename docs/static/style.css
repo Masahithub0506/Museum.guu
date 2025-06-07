@@ -260,8 +260,8 @@ nav {
 
 .exhibits {
  text-align: center;
- background-color: #20426C;
- color: white;
+ background-color: #000;
+ color: #fff;
  width: 100%;
  height: auto;
 }
@@ -289,7 +289,7 @@ nav {
   flex: 1;
   font-size: 16px;
   line-height: 1.6;
-  color: #fff;
+  color: #000;
   max-width: 600px;
   text-align: left;
 }
@@ -352,7 +352,7 @@ button {
 -->
 
 .exhibits-button {
-  background-color: red;
+  background-color: #f44336;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -368,8 +368,8 @@ button {
 
 .about {
  text-align: center;
- background-color: #20426C;
- color: white;
+ background-color: #fff;
+ color: #000;
  width: 100%;
  height: 400px;
 }
@@ -379,7 +379,8 @@ button {
   background: #20426C; 
  /*background-size: cover;
   background-position: center; */
-
+  position: fixed;
+  bottom: 0;
   text-align: center;
   width: 100%;
   height: auto; /* или 100%, выберите одно */
