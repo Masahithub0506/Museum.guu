@@ -379,7 +379,7 @@ button {
   background: #20426C; 
  /*background-size: cover;
   background-position: center; */
-  position: fixed;
+  position: fixed !important;
   bottom: 0;
   text-align: center;
   width: 100%;
@@ -443,13 +443,13 @@ button {
   background: #20426C; 
  /*background-size: cover;
   background-position: center; */
-
+  position: fixed !important;
+  bottom: 0;
   text-align: center;
   width: 100%;
   height: auto; /* или 100%, выберите одно */
   display: block;
   visibility: visible;
-  position: relative;
   pointer-events: all;
   margin: 0;
   z-index: 1;
@@ -587,7 +587,8 @@ button {
   height: auto; /* или 100%, выберите одно */
   display: block;
   visibility: visible;
-  position: relative;
+  position: fixed !important;
+  bottom: 0;
   pointer-events: all;
   /*  opacity: 1;  */
   margin: 0;
