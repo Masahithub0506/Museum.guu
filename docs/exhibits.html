@@ -39,43 +39,42 @@
   </main>
 
 
-  <div class="gallery-container">
+<div class="gallery-container">
   <button class="prev" onclick="prevImage()">←</button>
-  <img id="gallery-image" src="static/gallery/g1.jpg" alt="Gallery">
+  <img id="gallery-image" src="static/gallery/g1.jpg" alt="Gallery image" />
   <button class="next" onclick="nextImage()">→</button>
 </div>
 
 <script>
-const images = ['static/gallery/g1.jpg', 'static/gallery/g2.jpg', 'static/gallery/g3.jpg', 'static/gallery/g4.jpg', 'static/gallery/g5.jpg', 'static/gallery/g6.jpg', 'static/gallery/g7.jpg', 'static/gallery/g8.jpg', 'static/gallery/g9.jpg', 'static/gallery/g10.jpg'];
-let currentIndex = 0;
-
-function showImage(index) {
-  const img = document.getElementById('gallery-image');
-  img.src = images[index];
-}
-
-function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
-}
-
-function nextImage() {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
-}
-
-</script>
-
-
-      <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.querySelector(".burger");
-    const menu = document.querySelector(".menu");
-
-    burger.addEventListener("click", () => {
-      menu.classList.toggle("active");
-    });
-  });
+  const images = [
+    'static/gallery/g1.jpg',
+    'static/gallery/g2.jpg',
+    'static/gallery/g3.jpg',
+    'static/gallery/g4.jpg',
+    'static/gallery/g5.jpg',
+    'static/gallery/g6.jpg',
+    'static/gallery/g7.jpg',
+    'static/gallery/g8.jpg',
+    'static/gallery/g9.jpg',
+    'static/gallery/g10.jpg'
+  ];
+  
+  let currentIndex = 0;
+  
+  function showImage(index) {
+    const img = document.getElementById('gallery-image');
+    img.src = images[index];
+  }
+  
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+  
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
 </script>
 </body>
 </html>
