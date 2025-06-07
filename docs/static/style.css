@@ -274,7 +274,6 @@ nav {
 }
 
 .alex,
-.sov,
 .koz,
 .un {
   padding: 0 30px;
@@ -284,7 +283,6 @@ nav {
 }
 
 .alex-gallery-container,
-.sov-gallery-container,
 .koz-gallery-container,
 .un-gallery-container {
   display: flex;
@@ -293,7 +291,6 @@ nav {
 }
 
 #alex-img,
-#sov-img,
 #koz-img,
 #un-img {
   max-width: 500px;
@@ -303,7 +300,6 @@ nav {
 }
 
 #alex-text,
-#sov-text,
 #koz-text,
 #un-text {
   flex: 1;
@@ -320,7 +316,7 @@ button {
   cursor: pointer;
 }
 
-.revolution,
+.sov,
 .voi,
 .por {
   display: flex;
@@ -331,7 +327,7 @@ button {
   padding: 40px 20px;
 }
 
-#revolution-text,
+#sov-text,
 #voi-text,
 #por-text ,
  {
@@ -343,7 +339,7 @@ button {
   text-align: left;
 }
 
-.revolution-gallery-container,
+.sov-gallery-container,
 .voi-gallery-container,
 .por-gallery-container{
   display: flex;
@@ -351,7 +347,7 @@ button {
   gap: 10px;
 }
 
-#rev-img,
+#sov-img,
 #voi-img,
 #por-img {
   max-width: 500px;
