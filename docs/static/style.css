@@ -89,7 +89,7 @@ nav {
 
 /*  фон+Музей ГУУ  */
 .hero {
-  background: url("docs/static/glav.png");
+  background-image: url("docs/static/glav.png");
  /*  background: #20426C; */
   background-size: cover;
   background-position: center;
@@ -242,7 +242,7 @@ nav {
 
 .history{
  /* background-attachment: fixed; */
-  background: url("docs/static/history.png");
+  background-image: url("docs/static/history.png");
     background-color: #20426C;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -559,7 +559,6 @@ button {
   }
 
   .history,
-  .history1,
   .exhibits,
   .about {
   height: auto;
