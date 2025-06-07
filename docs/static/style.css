@@ -10,6 +10,11 @@ body {
   overflow-x: hidden;
 }
 
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 /* шапка для меню   */
 header {
   position: fixed; /* Закрепляем шапку */
@@ -112,7 +117,7 @@ nav {
 
 /*    */
 .hero h1 {
-  font-size: 7em;
+  font-size: 6em;
   color: #ffffff;
   margin: 1px 0 0;
 }
@@ -121,6 +126,7 @@ nav {
 main {
   padding: 60px 20px;
   background: #fff;
+  flex:1;
 }
 
 
@@ -258,6 +264,7 @@ nav {
 
 
 
+
 .exhibits {
  text-align: center;
  background-color: #fff;
@@ -266,26 +273,39 @@ nav {
  height: auto;
 }
 
-.alex {
+.alex,
+.sov,
+.koz,
+.un {
+  padding: 0 30px;
   display: flex;
   align-items: flex-start;
   gap: 50px;
 }
 
-.alex-gallery-container {
+.alex-gallery-container,
+.sov-gallery-container,
+.koz-gallery-container,
+.un-gallery-container {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-#alex1-img {
+#alex1-img,
+#sov-img,
+#koz-img,
+#un-img {
   max-width: 500px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#alex-text {
+#alex-text,
+#sov-text,
+#koz-text,
+#un-text {
   flex: 1;
   font-size: 16px;
   line-height: 1.6;
@@ -300,13 +320,21 @@ button {
   cursor: pointer;
 }
 
-.revolution {
+.revolution,
+.voi,
+.por {
   display: flex;
   align-items: flex-start;
   gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-#revolution-text {
+#revolution-text,
+#voi-text,
+#por-text ,
+ {
   flex: 1;
   font-size: 16px;
   line-height: 1.6;
@@ -315,13 +343,17 @@ button {
   text-align: left;
 }
 
-.revolution-gallery-container {
+.revolution-gallery-container,
+.voi-gallery-container,
+.por-gallery-container{
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-#revolution-img {
+#revolution-img,
+#voi-img,
+#por-img {
   max-width: 500px;
   height: auto;
   border-radius: 10px;
@@ -335,6 +367,20 @@ button {
 }
 
 
+
+
+
+.exhibits-button {
+  background-color: #20426C;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  flex-direction: end; 
+}
 
 <!--
 .ex:link, ex:visited {
@@ -350,22 +396,6 @@ button {
   background-color: red;
 } 
 -->
-
-.exhibits-button {
-  background-color: #20426C;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 5px;
-  display: inline-block;
-  margin-top: 20px;
-  flex-direction: end; 
-}
-
-
-
-
 .about {
  text-align: center;
  background-color: #fff;
@@ -375,12 +405,11 @@ button {
 }
 
 
-.contacts {
+footer.contacts {
   background: #20426C; 
  /*background-size: cover;
   background-position: center; */
-  position: fixed !important;
-  bottom: 0;
+  margin: -15px;
   text-align: center;
   width: 100%;
   height: auto; /* или 100%, выберите одно */
@@ -414,45 +443,37 @@ button {
 
 
     h1 {
-      font-size: 40px;
       text-align: center;
       margin-top: 30px;
     }
+
 .gallery-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 40px auto;
-    max-width: 600px;
-  }
-  .gallery-container img {
-    max-width: 500px;
-    max-height: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-  button {
-    font-size: 24px;
-    padding: 10px 15px;
-    cursor: pointer;
-    border: none;
-    background-color: #20426C;
-    color: white;
-    border-radius: 5px;
-    user-select: none;
-  }
-  button:hover {
-    background-color: #16335a;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery-container img {
+  max-width: 500px;
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button {
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
 
 
-.contacts {
+footer.contacts {
   background: #20426C; 
  /*background-size: cover;
   background-position: center; */
-  position: fixed !important;
-  bottom: 0;
+  
+ margin: -15px;
   text-align: center;
   width: 100%;
   height: auto; /* или 100%, выберите одно */
@@ -588,15 +609,15 @@ button {
     height: auto;
   }
 
-.contacts {
+footer.contacts {
   background: #20426C; 
   text-align: center;
   width: 100%;
   height: auto; /* или 100%, выберите одно */
   display: block;
   visibility: visible;
-  position: fixed !important;
-  bottom: 0;
+  position: relative !important;
+  bottom: auto;
   pointer-events: all;
   /*  opacity: 1;  */
   margin: 0;
