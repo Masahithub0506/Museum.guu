@@ -94,15 +94,17 @@ nav {
 
 /*  фон+Музей ГУУ  */
 .hero {
-  background-image: url("static/glav.png");
+  background-image: url("static/image/glav.png");
  /*  background: #20426C; */
   background-size: cover;
   background-position: center;
   text-align: center;
-  width: 100%;
-  height: auto;
+   width: auto;
+  height: 100%;
   padding: 200px 20px;
   color: white; 
+  font-size: 40px;
+}
 }
 
 /*    */
@@ -248,18 +250,18 @@ nav {
 
 .history{
  /* background-attachment: fixed; */
-  background-image: url("static/history.png");
+  background-image: src="static/image/history.png";
     background-color: #20426C;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: auto;
     width: 100%;
     overflow: hidden;
     position: relative;
     text-align: center;
     vertical-align: middle;
-    color: white;
+    color: #20426C;
 }
 
 
