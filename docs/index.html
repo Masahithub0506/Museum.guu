@@ -60,9 +60,9 @@
              <div class="alex">
   <!-- Левая часть: галерея -->
   <div class="alex-gallery-container">
-    <button class="prev" onclick="prevImage()">←</button>
-    <img id="alex1-img" src="static/alex1.jpg" alt="Фото">
-    <button class="next" onclick="nextImage()">→</button>
+    <button onclick="prevAlexImage()">←</button>
+    <img id="alex-img" src="static/ex/alex1.jpg" alt="Фото">
+    <button onclick="nextAlexImage()">→</button>
   </div>
   <!-- Правая часть: текст -->
   <div id="alex-text">
@@ -86,22 +86,7 @@
     </p>
   </div>
 </div>
-<script>
-const images = ['static/ex/alex1.jpg', 'static/ex/alex2.png', 'static/ex/alex3.png'];
-let currentIndex = 0;
-function showImage(index) {
-  document.getElementById('alex1-img').src = images[index];
-}
-function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
-}
-function nextImage() {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
-}
-showImage(currentIndex);
-</script>
+
 </div>
 
 
@@ -123,39 +108,20 @@ showImage(currentIndex);
 
   <!-- Правая часть: галерея -->
   <div class="revolution-gallery-container">
-    <button class="prev" onclick="prevImage()">←</button>
-    <img id="revolution-img" src="static/ex/rev1.jpg" alt="Фото">
-    <button class="next" onclick="nextImage()">→</button>
+    <button onclick="prevRevImage()">←</button>
+    <img id="rev-img" src="static/ex/rev1.jpg" alt="Фото">
+    <button onclick="nextRevImage()">→</button>
   </div>
 </div>
-<script>
-const revImages = ['static/ex/rev1.jpg', 'static/ex/rev2.jpg', 'static/ex/rev3.jpg'];
-let revIndex = 0;
 
-function showRevImage(index) {
-  document.getElementById('revolution-img').src = revImages[index];
-}
-
-function prevRevImage() {
-  revIndex = (revIndex - 1 + revImages.length) % revImages.length;
-  showRevImage(revIndex);
-}
-
-function nextRevImage() {
-  revIndex = (revIndex + 1) % revImages.length;
-  showRevImage(revIndex);
-}
-
-showRevImage(revIndex);
-</script>
             
 
              <div class="sov">
   <!-- Левая часть: галерея -->
   <div class="sov-gallery-container">
-    <button class="prev" onclick="prevImage()">←</button>
+    <button onclick="prevSovImage()">←</button>
     <img id="sov-img" src="static/ex/sov1.jpg" alt="Фото">
-    <button class="next" onclick="nextImage()">→</button>
+    <button onclick="nextSovImage()">→</button>
   </div>
   <!-- Правая часть: текст -->
   <div id="sov-text">
@@ -171,22 +137,7 @@ showRevImage(revIndex);
     </p>
   </div>
 </div>
-<script>
-const images = ['static/ex/sov1.jpg', 'static/ex/sov2.jpg', 'static/ex/sov3.jpg'];
-let currentIndex = 0;
-function showImage(index) {
-  document.getElementById('sov-img').src = images[index];
-}
-function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
-}
-function nextImage() {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
-}
-showImage(currentIndex);
-</script>
+
 </div>
 
 
@@ -215,31 +166,12 @@ showImage(currentIndex);
 
   <!-- Правая часть: галерея -->
   <div class="voi-gallery-container">
-    <button class="prev" onclick="prevRevImage()">←</button>
+    <button onclick="prevVoiImage()">←</button>
     <img id="voi-img" src="static/ex/voi1.jpg" alt="Фото">
-    <button class="next" onclick="nextRevImage()">→</button>
+    <button onclick="nextVoiImage()">→</button>
   </div>
 </div>
-<script>
-const Images = ['static/ex/voi1.jpg', 'static/ex/voi2.jpg', 'static/ex/voi3.jpg'];
-let currentIndex = 0;
 
-function showImage(index) {
-  document.getElementById('voi-img').src = Images[index];
-}
-
-function prevRevImage() {
-  currentIndex = (currentIndex - 1 + Images.length) % Images.length;
-  showRevImage(revIndex);
-}
-
-function nextRevImage() {
-  currentIndex = (currentIndex + 1) % Images.length;
-  showImage(currentIndex);
-}
-
-showImage(currentIndex);
-</script>
 
 
 
@@ -253,9 +185,9 @@ showImage(currentIndex);
              <div class="koz">
   <!-- Левая часть: галерея -->
   <div class="koz-gallery-container">
-    <button class="prev" onclick="prevImage()">←</button>
+    <button onclick="prevKozImage()">←</button>
     <img id="koz-img" src="static/ex/koz1.jpg" alt="Фото">
-    <button class="next" onclick="nextImage()">→</button>
+    <button onclick="nextKozImage()">→</button>
   </div>
   <!-- Правая часть: текст -->
   <div id="koz-text">
@@ -270,22 +202,7 @@ showImage(currentIndex);
     </p>
   </div>
 </div>
-<script>
-const images = ['static/ex/koz1.jpg', 'static/ex/koz2.jpg', 'static/ex/koz3.jpg', 'static/ex/koz4.jpg'];
-let currentIndex = 0;
-function showImage(index) {
-  document.getElementById('koz1-img').src = images[index];
-}
-function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
-}
-function nextImage() {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
-}
-showImage(currentIndex);
-</script>
+
 </div>
 
 
@@ -302,39 +219,20 @@ showImage(currentIndex);
 
   <!-- Правая часть: галерея -->
   <div class="por-gallery-container">
-    <button class="prev" onclick="prevRevImage()">←</button>
+    <button onclick="prevPorImage()">←</button>
     <img id="por-img" src="static/ex/por1.jpg" alt="Фото">
-    <button class="next" onclick="nextRevImage()">→</button>
+    <button onclick="nextPorImage()">→</button>
   </div>
 </div>
-<script>
-const revImages = ['static/ex/por1.jpg', 'static/ex/por2.jpg', 'static/ex/por3.jpg'];
-let revIndex = 0;
 
-function showRevImage(index) {
-  document.getElementById('por-img').src = revImages[index];
-}
-
-function prevRevImage() {
-  revIndex = (revIndex - 1 + revImages.length) % revImages.length;
-  showRevImage(revIndex);
-}
-
-function nextRevImage() {
-  revIndex = (revIndex + 1) % revImages.length;
-  showRevImage(revIndex);
-}
-
-showRevImage(revIndex);
-</script>
 
 
              <div class="un">
   <!-- Левая часть: галерея -->
   <div class="un-gallery-container">
-    <button class="prev" onclick="prevImage()">←</button>
+    <button onclick="prevUnImage()">←</button>
     <img id="un-img" src="static/ex/un1.jpg" alt="Фото">
-    <button class="next" onclick="nextImage()">→</button>
+    <button onclick="nextUnImage()">→</button>
   </div>
   <!-- Правая часть: текст -->
   <div id="un-text">
@@ -353,24 +251,66 @@ showRevImage(revIndex);
     </p>
   </div>
 </div>
-<script>
-const images = ['static/ex/un1.jpg', 'static/ex/un2.jpg', 'static/ex/un3.jpg'];
-let currentIndex = 0;
-function showImage(index) {
-  document.getElementById('un1-img').src = images[index];
-}
-function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
-}
-function nextImage() {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
-}
-showImage(currentIndex);
-</script>
+
 </div>
 
+<script>
+// Блок 1
+const alexImages = ['static/ex/alex1.jpg', 'static/ex/alex2.png', 'static/ex/alex3.png'];
+let alexIndex = 0;
+function showAlexImage(index) { document.getElementById('alex-img').src = alexImages[index]; }
+function prevAlexImage() { alexIndex = (alexIndex - 1 + alexImages.length) % alexImages.length; showAlexImage(alexIndex); }
+function nextAlexImage() { alexIndex = (alexIndex + 1) % alexImages.length; showAlexImage(alexIndex); }
+showAlexImage(alexIndex);
+
+// Блок 2
+const revImages = ['static/ex/rev1.jpg', 'static/ex/rev2.jpg', 'static/ex/rev3.jpg'];
+let revIndex = 0;
+function showRevImage(index) { document.getElementById('rev-img').src = revImages[index]; }
+function prevRevImage() { revIndex = (revIndex - 1 + revImages.length) % revImages.length; showRevImage(revIndex); }
+function nextRevImage() { revIndex = (revIndex + 1) % revImages.length; showRevImage(revIndex); }
+showRevImage(revIndex);
+
+// Блок 3
+const sovImages = ['static/ex/sov1.jpg', 'static/ex/sov2.jpg', 'static/ex/sov3.jpg'];
+let sovIndex = 0;
+function showSovImage(index) { document.getElementById('sov-img').src = sovImages[index]; }
+function prevSovImage() { sovIndex = (sovIndex - 1 + sovImages.length) % sovImages.length; showSovImage(sovIndex); }
+function nextSovImage() { sovIndex = (sovIndex + 1) % sovImages.length; showSovImage(sovIndex); }
+showSovImage(sovIndex);
+
+// Блок 4
+const voiImages = ['static/ex/voi1.jpg', 'static/ex/voi2.jpg', 'static/ex/voi3.jpg'];
+let voiIndex = 0;
+function showVoiImage(index) { document.getElementById('voi-img').src = voiImages[index]; }
+function prevVoiImage() { voiIndex = (voiIndex - 1 + voiImages.length) % voiImages.length; showVoiImage(voiIndex); }
+function nextVoiImage() { voiIndex = (voiIndex + 1) % voiImages.length; showVoiImage(voiIndex); }
+showVoiImage(voiIndex);
+
+// Блок 5
+const kozImages = ['static/ex/koz1.jpg', 'static/ex/koz2.jpg', 'static/ex/koz3.jpg', 'static/ex/koz4.jpg'];
+let kozIndex = 0;
+function showKozImage(index) { document.getElementById('koz-img').src = kozImages[index]; }
+function prevKozImage() { kozIndex = (kozIndex - 1 + kozImages.length) % kozImages.length; showKozImage(kozIndex); }
+function nextKozImage() { kozIndex = (kozIndex + 1) % kozImages.length; showKozImage(kozIndex); }
+showKozImage(kozIndex);
+
+// Блок 6
+const porImages = ['static/ex/por1.jpg', 'static/ex/por2.jpg', 'static/ex/por3.jpg'];
+let porIndex = 0;
+function showPorImage(index) { document.getElementById('por-img').src = porImages[index]; }
+function prevPorImage() { porIndex = (porIndex - 1 + porImages.length) % porImages.length; showPorImage(porIndex); }
+function nextPorImage() { porIndex = (porIndex + 1) % porImages.length; showPorImage(porIndex); }
+showPorImage(porIndex);
+
+// Блок 7
+const unImages = ['static/ex/un1.jpg', 'static/ex/un2.jpg', 'static/ex/un3.jpg'];
+let unIndex = 0;
+function showUnImage(index) { document.getElementById('un-img').src = unImages[index]; }
+function prevUnImage() { unIndex = (unIndex - 1 + unImages.length) % unImages.length; showUnImage(unIndex); }
+function nextUnImage() { unIndex = (unIndex + 1) % unImages.length; showUnImage(unIndex); }
+showUnImage(unIndex);
+</script>
 
 
             
