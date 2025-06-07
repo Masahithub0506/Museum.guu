@@ -18,7 +18,7 @@
     <header>
         <div class="logo-title">
             <!-- Логотип -->
-            <img src="static/image/logo.jpg" alt="Логотип Музея ГУУ">
+            <img src="docs/static/image /logo.jpglogo.jpg" alt="Логотип Музея ГУУ">
         </div>
          <p>                                  </p><button class="burger">&#9776;</button>
         <nav class="fixed-nav">
@@ -123,9 +123,9 @@ showImage(currentIndex);
 
   <!-- Правая часть: галерея -->
   <div class="revolution-gallery-container">
-    <button class="prev" onclick="prevRevImage()">←</button>
+    <button class="prev" onclick="prevImage()">←</button>
     <img id="revolution-img" src="static/ex/rev1.jpg" alt="Фото">
-    <button class="next" onclick="nextRevImage()">→</button>
+    <button class="next" onclick="nextImage()">→</button>
   </div>
 </div>
 <script>
@@ -221,24 +221,24 @@ showImage(currentIndex);
   </div>
 </div>
 <script>
-const revImages = ['static/ex/voi1.jpg', 'static/ex/voi2.jpg', 'static/ex/voi3.jpg'];
-let revIndex = 0;
+const Images = ['static/ex/voi1.jpg', 'static/ex/voi2.jpg', 'static/ex/voi3.jpg'];
+let currentIndex = 0;
 
-function showRevImage(index) {
-  document.getElementById('voi-img').src = revImages[index];
+function showImage(index) {
+  document.getElementById('voi-img').src = Images[index];
 }
 
 function prevRevImage() {
-  revIndex = (revIndex - 1 + revImages.length) % revImages.length;
+  currentIndex = (currentIndex - 1 + Images.length) % Images.length;
   showRevImage(revIndex);
 }
 
 function nextRevImage() {
-  revIndex = (revIndex + 1) % revImages.length;
-  showRevImage(revIndex);
+  currentIndex = (currentIndex + 1) % Images.length;
+  showImage(currentIndex);
 }
 
-showRevImage(revIndex);
+showImage(currentIndex);
 </script>
 
 
