@@ -233,7 +233,7 @@
 
 <script>
 // Блок 1
-const alexImages = ['static/ex/alex1.jpg', 'static/ex/alex2.png', 'static/ex/alex3.png'];
+const alexImages = ['static/ex/alex1.jpg', 'static/ex/alex2.jpg', 'static/ex/alex3.jpg'];
 let alexIndex = 0;
 function showAlexImage(index) { document.getElementById('alex-img').src = alexImages[index]; }
 function prevAlexImage() { alexIndex = (alexIndex - 1 + alexImages.length) % alexImages.length; showAlexImage(alexIndex); }
