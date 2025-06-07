@@ -57,15 +57,13 @@
         <section class="exhibits" id="exhibits">
             <h1>Экспонаты</h1>
 
-             <div class="alex">
-  <!-- Левая часть: галерея -->
-  <div class="alex-gallery-container">
-    <button onclick="prevAlexImage()">←</button>
-    <img id="alex-img" src="static/ex/alex1.jpg" alt="Фото">
-    <button onclick="nextAlexImage()">→</button>
-  </div>
-  <!-- Правая часть: текст -->
-  <div id="alex-text">
+
+
+
+
+<div class="alex">
+  <!-- Левая часть: текст -->
+    <div id="alex-text">
     <h2>Александровское коммерческое училище</h2>
     <p>
       Александровское коммерческое училище (1880–1917) является ключевым экспонатом,
@@ -85,32 +83,11 @@
       эволюцию отечественной школы менеджмента.
     </p>
   </div>
-</div>
-
-</div>
-
-
-
-<div class="revolution">
-  <!-- Левая часть: текст -->
-  <div id="revolution-text">
-    <h2>Первые шаги вуза (МПЭПИ-МПЭИ) 1919-1930 </h2>
-    <p>
-      Экспонат посвящён революционным преобразованиям в системе образования.
-      После Октябрьской революции 1917 г. создаются новые учебные заведения практической направленности - техникумы.
-      Преемником Александровского коммерческого училища в 1917 г. стал Московский промышленно-экономический техникум (МПЭТ). 
-      С 30 апреля 1919 г. начинается история университета.На базе МПЭТ учреждается высшее учебное заведение Московский промышленно-экономический практический институт (в 1923 г. из названия убрали слово "практический").
-      Это отражало стремление к более глубокому и системному образованию специалистов в области экономики и промышленности.
-      Институт стал важным шагом на пути создания новой модели высшего образования, ориентированной на практику и социалистические идеалы.
-      Данный экспонат демонстрирует материалы того времени, рассказывая об этапах становления учебного заведения.
-    </p>
-  </div>
-
   <!-- Правая часть: галерея -->
-  <div class="revolution-gallery-container">
-    <button onclick="prevRevImage()">←</button>
-    <img id="rev-img" src="static/ex/rev1.jpg" alt="Фото">
-    <button onclick="nextRevImage()">→</button>
+  <div class="alex-gallery-container">
+<button onclick="prevAlexImage()">←</button>
+    <img id="alex-img" src="static/ex/alex1.jpg" alt="Фото">
+    <button onclick="nextAlexImage()">→</button>
   </div>
 </div>
 
@@ -125,15 +102,15 @@
   </div>
   <!-- Правая часть: текст -->
   <div id="sov-text">
-    <h2> Вуз для новой советской индустрии 1930-1941</h2>
+    <h2> Первые шаги вуза (МПЭПИ-МПЭИ) 1919-1930 </h2>
     <p>
-    Экспонат посвящён созданию Московского инженерно-экономического института — одного из ключевых этапов в развитии отечественного образования в сфере экономики и управления.
-    Институт был основан с целью подготовки специалистов, способных сочетать инженерные знания с экономическим мышлением для решения задач народного хозяйства.
-    K концу 30-хх гг. факультеты МИЭИ были сформированы по отраслевому принципу: машиностроительный, строительный, химической промышленности, экономический, металлургический, автотранспортный.
-    МИЭИ стал лидером промышленных разработок для новых предприятий, в подготовке инженеров-экономистов для заводов и фабрик.
-    9-10 декабя 1940 г. была проведена первая студенческая научная конференция МИЭИ.
-    В центре внимания экспозиции — факты, события и личности, стоявшие у истоков института.
-   Материалы экспоната иллюстрируют, как институт стал важным научно-образовательным центром, способствующим модернизации страны.
+    Экспонат посвящён революционным преобразованиям в системе образования.
+    После Октябрьской революции 1917 г. создаются новые учебные заведения практической направленности - техникумы.
+    Преемником Александровского коммерческого училища в 1917 г. стал Московский промышленно-экономический техникум (МПЭТ). 
+    С 30 апреля 1919 г. начинается история университета.На базе МПЭТ учреждается высшее учебное заведение Московский промышленно-экономический практический институт (в 1923 г. из названия убрали слово "практический").
+    Это отражало стремление к более глубокому и системному образованию специалистов в области экономики и промышленности.
+    Институт стал важным шагом на пути создания новой модели высшего образования, ориентированной на практику и социалистические идеалы.
+    Данный экспонат демонстрирует материалы того времени, рассказывая об этапах становления учебного заведения.
     </p>
   </div>
 </div>
@@ -263,15 +240,8 @@ function prevAlexImage() { alexIndex = (alexIndex - 1 + alexImages.length) % ale
 function nextAlexImage() { alexIndex = (alexIndex + 1) % alexImages.length; showAlexImage(alexIndex); }
 showAlexImage(alexIndex);
 
-// Блок 2
-const revImages = ['static/ex/rev1.jpg', 'static/ex/rev2.jpg', 'static/ex/rev3.jpg'];
-let revIndex = 0;
-function showRevImage(index) { document.getElementById('rev-img').src = revImages[index]; }
-function prevRevImage() { revIndex = (revIndex - 1 + revImages.length) % revImages.length; showRevImage(revIndex); }
-function nextRevImage() { revIndex = (revIndex + 1) % revImages.length; showRevImage(revIndex); }
-showRevImage(revIndex);
 
-// Блок 3
+// Блок 2
 const sovImages = ['static/ex/sov1.jpg', 'static/ex/sov2.jpg', 'static/ex/sov3.jpg'];
 let sovIndex = 0;
 function showSovImage(index) { document.getElementById('sov-img').src = sovImages[index]; }
@@ -279,7 +249,7 @@ function prevSovImage() { sovIndex = (sovIndex - 1 + sovImages.length) % sovImag
 function nextSovImage() { sovIndex = (sovIndex + 1) % sovImages.length; showSovImage(sovIndex); }
 showSovImage(sovIndex);
 
-// Блок 4
+// Блок 3
 const voiImages = ['static/ex/voi1.jpg', 'static/ex/voi2.jpg', 'static/ex/voi3.jpg'];
 let voiIndex = 0;
 function showVoiImage(index) { document.getElementById('voi-img').src = voiImages[index]; }
@@ -287,7 +257,7 @@ function prevVoiImage() { voiIndex = (voiIndex - 1 + voiImages.length) % voiImag
 function nextVoiImage() { voiIndex = (voiIndex + 1) % voiImages.length; showVoiImage(voiIndex); }
 showVoiImage(voiIndex);
 
-// Блок 5
+// Блок 4
 const kozImages = ['static/ex/koz1.jpg', 'static/ex/koz2.jpg', 'static/ex/koz3.jpg', 'static/ex/koz4.jpg'];
 let kozIndex = 0;
 function showKozImage(index) { document.getElementById('koz-img').src = kozImages[index]; }
@@ -295,7 +265,7 @@ function prevKozImage() { kozIndex = (kozIndex - 1 + kozImages.length) % kozImag
 function nextKozImage() { kozIndex = (kozIndex + 1) % kozImages.length; showKozImage(kozIndex); }
 showKozImage(kozIndex);
 
-// Блок 6
+// Блок 5
 const porImages = ['static/ex/por1.jpg', 'static/ex/por2.jpg', 'static/ex/por3.jpg'];
 let porIndex = 0;
 function showPorImage(index) { document.getElementById('por-img').src = porImages[index]; }
@@ -303,7 +273,7 @@ function prevPorImage() { porIndex = (porIndex - 1 + porImages.length) % porImag
 function nextPorImage() { porIndex = (porIndex + 1) % porImages.length; showPorImage(porIndex); }
 showPorImage(porIndex);
 
-// Блок 7
+// Блок 6
 const unImages = ['static/ex/un1.jpg', 'static/ex/un2.jpg', 'static/ex/un3.jpg'];
 let unIndex = 0;
 function showUnImage(index) { document.getElementById('un-img').src = unImages[index]; }
