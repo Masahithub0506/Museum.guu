@@ -7,17 +7,18 @@
     <meta name="keywords" content="музей, ГУУ, история, управление, университет, экспонаты">
     <meta name="author" content="ГУУ">
     <link rel="canonical" href="https://museum.guu/">
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="static/logo.jpg">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="static/image/logo.jpg">
 
     <title>Музей ГУУ</title>
     <!-- Подключаем CSS файл -->
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
+  <div class="wrapper">
     <header>
         <div class="logo-title">
             <!-- Логотип -->
-            <img src="static/logo.jpg" alt="Логотип Музея ГУУ">
+            <img src="static/image/logo.jpg" alt="Логотип Музея ГУУ">
         </div>
          <p>                                  </p><button class="burger">&#9776;</button>
         <nav class="fixed-nav">
@@ -42,7 +43,7 @@
     <section class="hero" id="home">
         <h1>Музей ГУУ</h1>
         <p>                  </p>
-        <p class="tagline" style=" background-image: url("static/glav.png");">Музей истории и развития управления Государственного университета управления – одно из подразделений Университета, выполняющее учебные, методические и научно-исследовательские функции. Обеспечивает учебный, научный и воспитательный процесс.</p>
+        <p class="tagline">Музей истории и развития управления Государственного университета управления – одно из подразделений Университета, выполняющее учебные, методические и научно-исследовательские функции. Обеспечивает учебный, научный и воспитательный процесс.</p>
     </section>
 
     <main>
@@ -54,7 +55,8 @@
         
         <!-- Пример других секций -->
         <section class="exhibits" id="exhibits">
-            <h2>Экспонаты</h2>
+            <h1>Экспонаты</h1>
+
              <div class="alex">
   <!-- Левая часть: галерея -->
   <div class="alex-gallery-container">
@@ -64,6 +66,7 @@
   </div>
   <!-- Правая часть: текст -->
   <div id="alex-text">
+    <h2>Александровское коммерческое училище</h2>
     <p>
       Александровское коммерческое училище (1880–1917) является ключевым экспонатом,
       иллюстрирующим становление коммерческого и управленческого образования в России.
@@ -84,7 +87,7 @@
   </div>
 </div>
 <script>
-const images = ['static/alex1.jpg', 'static/alex2.png', 'static/alex3.png'];
+const images = ['static/ex/alex1.jpg', 'static/ex/alex2.png', 'static/ex/alex3.png'];
 let currentIndex = 0;
 function showImage(index) {
   document.getElementById('alex1-img').src = images[index];
@@ -102,12 +105,18 @@ showImage(currentIndex);
 </div>
 
 
+
 <div class="revolution">
   <!-- Левая часть: текст -->
   <div id="revolution-text">
+    <h2>Первые шаги вуза (МПЭПИ-МПЭИ) 1919-1930 </h2>
     <p>
-      Экспонат посвящён революционным преобразованиям в системе образования. После Октябрьской революции 1917 г. создаются новые учебные заведения практической направленности — техникумы. Преемником Александровского коммерческого училища в 1917 г. стал Московский промышленно-экономический техникум (МПЭТ).<br><br>
-      С 30 апреля 1919 г. начинается история университета. На базе МПЭТ учреждается высшее учебное заведение — Московский промышленно-экономический практический институт (в 1923 г. из названия убрали слово "практический"). Это отражало стремление к более глубокому и системному образованию специалистов в области экономики и промышленности. Институт стал важным шагом на пути создания новой модели высшего образования, ориентированной на практику и социалистические идеалы.<br><br>
+      Экспонат посвящён революционным преобразованиям в системе образования.
+      После Октябрьской революции 1917 г. создаются новые учебные заведения практической направленности - техникумы.
+      Преемником Александровского коммерческого училища в 1917 г. стал Московский промышленно-экономический техникум (МПЭТ). 
+      С 30 апреля 1919 г. начинается история университета.На базе МПЭТ учреждается высшее учебное заведение Московский промышленно-экономический практический институт (в 1923 г. из названия убрали слово "практический").
+      Это отражало стремление к более глубокому и системному образованию специалистов в области экономики и промышленности.
+      Институт стал важным шагом на пути создания новой модели высшего образования, ориентированной на практику и социалистические идеалы.
       Данный экспонат демонстрирует материалы того времени, рассказывая об этапах становления учебного заведения.
     </p>
   </div>
@@ -115,12 +124,12 @@ showImage(currentIndex);
   <!-- Правая часть: галерея -->
   <div class="revolution-gallery-container">
     <button class="prev" onclick="prevRevImage()">←</button>
-    <img id="revolution-img" src="static/rev1.png" alt="Фото">
+    <img id="revolution-img" src="static/ex/rev1.jpg" alt="Фото">
     <button class="next" onclick="nextRevImage()">→</button>
   </div>
 </div>
 <script>
-const revImages = ['static/rev1.png', 'static/rev2.png', 'static/rev3.png'];
+const revImages = ['static/ex/rev1.jpg', 'static/ex/rev2.jpg', 'static/ex/rev3.jpg'];
 let revIndex = 0;
 
 function showRevImage(index) {
@@ -140,6 +149,230 @@ function nextRevImage() {
 showRevImage(revIndex);
 </script>
             
+
+             <div class="sov">
+  <!-- Левая часть: галерея -->
+  <div class="sov-gallery-container">
+    <button class="prev" onclick="prevImage()">←</button>
+    <img id="sov-img" src="static/ex/sov1.jpg" alt="Фото">
+    <button class="next" onclick="nextImage()">→</button>
+  </div>
+  <!-- Правая часть: текст -->
+  <div id="sov-text">
+    <h2> Вуз для новой советской индустрии 1930-1941</h2>
+    <p>
+    Экспонат посвящён созданию Московского инженерно-экономического института — одного из ключевых этапов в развитии отечественного образования в сфере экономики и управления.
+    Институт был основан с целью подготовки специалистов, способных сочетать инженерные знания с экономическим мышлением для решения задач народного хозяйства.
+    K концу 30-хх гг. факультеты МИЭИ были сформированы по отраслевому принципу: машиностроительный, строительный, химической промышленности, экономический, металлургический, автотранспортный.
+    МИЭИ стал лидером промышленных разработок для новых предприятий, в подготовке инженеров-экономистов для заводов и фабрик.
+    9-10 декабя 1940 г. была проведена первая студенческая научная конференция МИЭИ.
+    В центре внимания экспозиции — факты, события и личности, стоявшие у истоков института.
+   Материалы экспоната иллюстрируют, как институт стал важным научно-образовательным центром, способствующим модернизации страны.
+    </p>
+  </div>
+</div>
+<script>
+const images = ['static/ex/sov1.jpg', 'static/ex/sov2.jpg', 'static/ex/sov3.jpg'];
+let currentIndex = 0;
+function showImage(index) {
+  document.getElementById('sov-img').src = images[index];
+}
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+}
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
+}
+showImage(currentIndex);
+</script>
+</div>
+
+
+
+
+
+
+
+
+<div class="voi">
+  <!-- Левая часть: текст -->
+  <div id="voi-text">
+    <h2>Суровые годы войны и послевоенное восстановление 1941-1950 </h2>
+    <p>
+      Экспонат посвящён Московскому инженерно-экономическому институту в годы Великой Отечественной войны — тяжёлому, но героическому периоду в его истории.
+      С первых дней войны преподаватели, сотрудники и студенты встали на защиту Родины, многие ушли на фронт, проявляя мужество и самоотверженность.
+      Экспозиция рассказывает о подвигах выпускников и сотрудников, чьи имена навсегда вошли в историю.
+      Представлены архивные документы, фотографии, награды. Особое внимание уделено героизму и человеческой стойкости, проявленным в самые тяжёлые годы.
+      «Вахта памяти»— центральная часть выставки, символизирующая уважение и благодарность новым поколениям к подвигу предшественников.
+      Несмотря на тяжёлые последствия войны, институт быстро возобновил учебный процесс и научную деятельность, активно участвуя в восстановлении народного хозяйства.
+      В это время началось расширение образовательных программ, с учётом новых задач, стоящих перед страной.
+      Одним из ключевых событий стало появление первой управленческой кафедры, что ознаменовало начало подготовки специалистов в области управления производством и экономическими процессами.
+      Это стало важным шагом к формированию современной системы управленческого образования.
+    </p>
+  </div>
+
+  <!-- Правая часть: галерея -->
+  <div class="voi-gallery-container">
+    <button class="prev" onclick="prevRevImage()">←</button>
+    <img id="voi-img" src="static/ex/voi1.jpg" alt="Фото">
+    <button class="next" onclick="nextRevImage()">→</button>
+  </div>
+</div>
+<script>
+const revImages = ['static/ex/voi1.jpg', 'static/ex/voi2.jpg', 'static/ex/voi3.jpg'];
+let revIndex = 0;
+
+function showRevImage(index) {
+  document.getElementById('voi-img').src = revImages[index];
+}
+
+function prevRevImage() {
+  revIndex = (revIndex - 1 + revImages.length) % revImages.length;
+  showRevImage(revIndex);
+}
+
+function nextRevImage() {
+  revIndex = (revIndex + 1) % revImages.length;
+  showRevImage(revIndex);
+}
+
+showRevImage(revIndex);
+</script>
+
+
+
+
+
+
+
+
+
+
+             <div class="koz">
+  <!-- Левая часть: галерея -->
+  <div class="koz-gallery-container">
+    <button class="prev" onclick="prevImage()">←</button>
+    <img id="koz-img" src="static/ex/koz1.jpg" alt="Фото">
+    <button class="next" onclick="nextImage()">→</button>
+  </div>
+  <!-- Правая часть: текст -->
+  <div id="koz-text">
+    <h2> Эпоха Олимпиады Козловой: Новые горизонты 1950-1960</h2>
+    <h2> Эпоха Олимпиады Козловой: Первый Управленческий 1970-1985</h2>
+    <p>
+      Период руководства Олимпиады Васильевны Козловой стал поистине золотой эпохой в истории  университета.
+      Экспонат «Эпоха Олимпиады Васильевны Козловой» посвящён одному из самых ярких и значимых периодов в истории Государственного университета управления — времени, когда университетом руководила Олимпиада Васильевна Козлова. Этот этап охватывает десятилетия интенсивного развития, становления научных школ, укрепления учебно-методической базы и роста авторитета ГУУ как ведущего вуза страны в области экономики и управления.
+      В экспозиции отражены ключевые события и достижения той эпохи: открытие новых факультетов и кафедр, укрепление связей с промышленностью и государственными структурами, развитие международного сотрудничества.
+      Отдельное место в экспозиции занимает образ самой Олимпиады Васильевны — выдающегося организатора, учёного, педагога и женщины с твёрдым характером и высокой культурой.
+      «Эпоха Олимпиады Васильевны Козловой» — это дань памяти и глубокого уважения к человеку, сыгравшему ключевую роль в истории ГУУ.
+    </p>
+  </div>
+</div>
+<script>
+const images = ['static/ex/koz1.jpg', 'static/ex/koz2.jpg', 'static/ex/koz3.jpg', 'static/ex/koz4.jpg'];
+let currentIndex = 0;
+function showImage(index) {
+  document.getElementById('koz1-img').src = images[index];
+}
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+}
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
+}
+showImage(currentIndex);
+</script>
+</div>
+
+
+
+<div class="por">
+  <!-- Левая часть: текст -->
+  <div id="por-text">
+    <h2>Эпоха Анатолия Поршнева: академия в годы перемен 1986-1997</h2>
+    <p>
+      Этот раздел экспозиции посвящён переломному периоду в истории Государственного университета управления — времени руководства Анатолия Григорьевича Поршнева (1986–1997).
+      Эти годы стали испытанием для всей системы высшего образования, но именно тогда ГУУ (тогда — ГАУ) не просто сохранил свои позиции, а совершил качественный рывок вперёд, став флагманом управленческого образования новой России.
+    </p>
+  </div>
+
+  <!-- Правая часть: галерея -->
+  <div class="por-gallery-container">
+    <button class="prev" onclick="prevRevImage()">←</button>
+    <img id="por-img" src="static/ex/por1.jpg" alt="Фото">
+    <button class="next" onclick="nextRevImage()">→</button>
+  </div>
+</div>
+<script>
+const revImages = ['static/ex/por1.jpg', 'static/ex/por2.jpg', 'static/ex/por3.jpg'];
+let revIndex = 0;
+
+function showRevImage(index) {
+  document.getElementById('por-img').src = revImages[index];
+}
+
+function prevRevImage() {
+  revIndex = (revIndex - 1 + revImages.length) % revImages.length;
+  showRevImage(revIndex);
+}
+
+function nextRevImage() {
+  revIndex = (revIndex + 1) % revImages.length;
+  showRevImage(revIndex);
+}
+
+showRevImage(revIndex);
+</script>
+
+
+             <div class="un">
+  <!-- Левая часть: галерея -->
+  <div class="un-gallery-container">
+    <button class="prev" onclick="prevImage()">←</button>
+    <img id="un-img" src="static/ex/un1.jpg" alt="Фото">
+    <button class="next" onclick="nextImage()">→</button>
+  </div>
+  <!-- Правая часть: текст -->
+  <div id="un-text">
+    <h2>Университет на рубеже веков: новая глава в истории вуза 1998-2006</h2>
+     <h2> Университет в XXI веке: достижения настоящего</h2p>
+     <h2> Университет в XXI веке: наше будущее</h2>
+    <p>
+      9 июля 1998 г. ГАУ им. Серго Орджоникидзе была преобразована в Государственный университет управления.
+      В конце XX — начале XXI века институт прошёл глубокую трансформацию, расширил свои образовательные и научные возможности.
+      В 1999 г. за большой вклад в развитие высшего образования и подготовку высококвалифицированных специалистов коллектив университета был награжден благодарностью Президента Росийской Федерации.
+      В 1999/2000 учебном году в ГУУ обучалось 15 тыс. студентов.
+      В 2004 г. в ГУУ можно было получить подготовку по 22 специальностям.
+      Будущих управленцев готовил внушительный преподавательский корпус - 1235 преподавателей.
+      За 2001-2005 гг. в ГУУ были защищены 50 докторских и 120 кандидатских дисертаций.
+      Подготовка аспирантов и докторантов шла на 60 кафедрах по 24 научным специальностям.
+    </p>
+  </div>
+</div>
+<script>
+const images = ['static/ex/un1.jpg', 'static/ex/un2.jpg', 'static/ex/un3.jpg'];
+let currentIndex = 0;
+function showImage(index) {
+  document.getElementById('un1-img').src = images[index];
+}
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+}
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
+}
+showImage(currentIndex);
+</script>
+</div>
+
+
+
             
          <!--  <button onclick="document.location='exhibits.html'" target="_blank" style="color: white; background-color: red";>Подробнее»</button>  -->
             <a href="exhibits.html" target="_blank" class="exhibits-button">Подробнее»</a>
@@ -151,7 +384,7 @@ showRevImage(revIndex);
              <p>Основанный в 1919 году как Московский промышленно-экономический институт, ГУУ стал первым в России специализированным вузом по подготовке управленческих кадров. В советский период вуз (тогда МИУ им. Орджоникидзе) под руководством Олимпиады Козловой превратился в ведущий центр управленческого образования, внедрив компьютерные технологии обучения. Переломные 1990-е годы под руководством Анатолия Поршнева ознаменовались преобразованием в Государственную академию управления и созданием первых в России программ МВА. В 2006 году вуз получил статус университета, сохранив лидерские позиции. Сегодня ГУУ - это 10+ факультетов, 15 000 студентов и современные образовательные стандарты. Особую гордость составляют научные школы в области менеджмента и экономики, продолжающие традиции, заложенные десятилетия назад. Университет поддерживает партнерские отношения с ведущими российскими корпорациями и зарубежными вузами. За вековую историю ГУУ подготовил более 200 000 специалистов, многие из которых стали министрами, топ-менеджерами и успешными предпринимателями. Сохраняя богатое наследие, университет продолжает развиваться как центр инноваций в управленческом образовании.</p>
         </section>
         
-        <section class="contacts" id="contacts">
+         <footer class="contacts" id="contacts">
             <h2>Наши контакты</h2>
             <address>
             <p>Телефон: +7 (495) 377-89-14</p>
@@ -159,11 +392,11 @@ showRevImage(revIndex);
             <p>Адрес: 109542, Москва, Рязанский проспект, 99.</p>
             </address>
             <div class="links">
-            <a href="https://t.me/museumGUU2024" target="_blank" title="Telegram"><img src="static/Telegram.png" alt="Телеграм_ссылка" ></a>
-            <a href="mailto:inf@guu.ru" target="_blank" title="E-mail"><img src="static/letter.jpg" alt="Ссылка на почту" ></a>
-            <a href="tel:+7 (495) 377-89-14" target="_blank" rel="nofollow" aria-label="Телефон"><img src="static/phone.png" alt="Телефон"></a>
+            <a href="https://t.me/museumGUU2024" target="_blank" title="Telegram"><img src="static/image/Telegram.png" alt="Телеграм_ссылка" ></a>
+            <a href="mailto:inf@guu.ru" target="_blank" title="E-mail"><img src="static/image/letter.jpg" alt="Ссылка на почту" ></a>
+            <a href="tel:+7 (495) 377-89-14" target="_blank" rel="nofollow" aria-label="Телефон"><img src="static/image/phone.png" alt="Телефон"></a>
             </div>
-        </section>
+        </footer>
     </main>
 
     <script src="static/script.js"></script>
@@ -178,7 +411,6 @@ showRevImage(revIndex);
     });
   });
 </script>
-
+ </div>
 </body>
 </html>
-
