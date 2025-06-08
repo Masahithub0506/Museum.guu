@@ -451,7 +451,7 @@ footer.contacts {
 
     h1 {
       text-align: center;
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
 .gallery-container {
@@ -460,7 +460,7 @@ footer.contacts {
   justify-content: center;
   gap: 10px;
   box-sizing: border-box;
-  padding: 50px 100px;
+  padding: 30px 100px;
 }
 
 .gallery-container img {
