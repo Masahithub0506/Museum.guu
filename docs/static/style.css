@@ -106,7 +106,7 @@ nav {
   color: white; 
   font-size: 30px;
 }
-}
+
 
 /*    */
 .hero .tagline {
@@ -175,16 +175,6 @@ html {
 
 
 
-body {
-  margin: 0;
-  font-family: "PT Root UI", sans-serif;
-  font-style: normal;
-  background: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  color: #000;
-  line-height: normal;
-}
 
 /* шапка для меню   */
 header {
@@ -327,11 +317,7 @@ nav {
   text-align: left;
 }
 
-button {
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-}
+
 
 .sov,
 .voi,
@@ -395,7 +381,7 @@ button {
   flex-direction: end; 
 }
 
-<!--
+/*
 .ex:link, ex:visited {
   background-color: #f44336;
   color: white;
@@ -407,8 +393,7 @@ button {
 
 .ex:hover, ex:active {
   background-color: red;
-} 
--->
+} */
 
 
 
@@ -473,11 +458,7 @@ footer.contacts {
   
 }
 
-button {
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-}
+
 
 
 footer.contacts {
