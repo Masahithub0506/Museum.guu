@@ -118,7 +118,7 @@ nav {
 
 /*    */
 .hero h1 {
-  font-size: 7em;
+  font-size: 8em;
   color: #ffffff;
   margin: 1px 0 0;
 }
@@ -479,7 +479,7 @@ footer.contacts {
   z-index: 1;
   padding: 35px 0 45px;
   background-size: cover;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   padding: 35px 20px 45px;
   
