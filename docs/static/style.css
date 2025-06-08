@@ -100,17 +100,15 @@ nav {
   background-size: cover;
   background-position: center;
   text-align: center;
-  width: auto;
-  height: 100%;
+  min-height: 100vh;
   padding: 200px 40px;
   color: white; 
-  font-size: 40px;
 }
 
 
 /*    */
 .hero .tagline {
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   letter-spacing: 1px;
   padding: 10px 40px;
@@ -120,7 +118,7 @@ nav {
 
 /*    */
 .hero h1 {
-  font-size: 50px;
+  font-size: 12em;
   color: #ffffff;
   margin: 1px 0 0;
 }
