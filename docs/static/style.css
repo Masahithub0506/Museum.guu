@@ -100,7 +100,7 @@ nav {
   background-size: cover;
   background-position: center;
   text-align: center;
-  width: 100%;
+  width: auto;
   height: 100%;
   padding: 150px 40px;
   color: white; 
