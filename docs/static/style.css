@@ -134,7 +134,7 @@ main {
 
 
 h1 {
-  font-size: 28px;
+  font-size: 40px;
 }
 
 
@@ -436,16 +436,16 @@ footer.contacts {
 
     h1 {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 20px 20px 0px 20px;
     }
 
 .gallery-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   box-sizing: border-box;
-  padding: 30px 100px;
+  padding: 20px 100px 50px 100px;
 }
 
 .gallery-container img {
