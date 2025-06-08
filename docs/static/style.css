@@ -127,7 +127,7 @@ nav {
 
 /*    */
 main {
-  padding: 30px 20px;
+  padding: 20px 20px;
   background: #fff;
   flex:1;
 }
@@ -436,7 +436,7 @@ footer.contacts {
 
     h1 {
       text-align: center;
-      margin-top: 20px 20px 0px 20px;
+      margin-top: 30px 20px 0px 20px;
     }
 
 .gallery-container {
