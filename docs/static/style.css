@@ -577,113 +577,67 @@ footer.contacts {
     font-size: 2.5em;
   }
 
-  section {
-   height: 100%;
-   width: auto;
-   margin: 0;
-  }
-
+section,
   .history,
   .exhibits,
   .about {
-  height: 100%;
-  width: auto;
-   margin: 0;
-  text-align: left;
+    height: auto;
+    padding: 10px;
+    text-align: center; /* Центрирование контента на маленьких экранах */
+  }
+
+  .exhibits {
+    text-align: center;
+    padding: 10px;
   }
 
 
-.exhibits {
- text-align: center;
- background-color: #fff;
- color: #20426C;
- width: auto;
- height: 100%;
-}
+  .alex,
+  .koz,
+  .un,
+  .sov,
+  .voi,
+  .por {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 5px;
+  }
 
-.alex,
-.koz,
-.un {
-  padding: 0 10px;
-  display: flex;
-  align-items: flex-start;
-  gap: 5px;
-}
+  #alex-img,
+  #koz-img,
+  #un-img,
+  #sov-img,
+  #voi-img,
+  #por-img {
+    max-width: 90%;
+  }
 
-.alex-gallery-container,
-.koz-gallery-container,
-.un-gallery-container {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
+  #alex-text,
+  #koz-text,
+  #un-text,
+  #sov-text,
+  #voi-text,
+  #por-text {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 
-#alex-img,
-#koz-img,
-#un-img {
-  max-width: 250px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+  .alex-gallery-container,
+  .koz-gallery-container,
+  .un-gallery-container,
+  .sov-gallery-container,
+  .voi-gallery-container,
+  .por-gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-#alex-text,
-#koz-text,
-#un-text {
-  flex: 1;
- 
-  line-height: 1.6;
-  color: #20426C;
-  max-width: 300px;
-  text-align: left;
-}
-
-
-
-.sov,
-.voi,
-.por {
-  display: flex;
-  align-items: flex-start;
-  gap: 5px;
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 10px 5px;
-}
-
-#sov-text,
-#voi-text,
-#por-text ,
- {
-  flex: 1;
-  
-  line-height: 1.6;
-  color:#20426C;
-  max-width: 300px;
-  text-align: left;
-}
-
-.sov-gallery-container,
-.voi-gallery-container,
-.por-gallery-container{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-#sov-img,
-#voi-img,
-#por-img {
-  max-width: 250px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-button {
-  font-size: 24px;
-  padding: 5px;
-  cursor: pointer;
+  button {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
 }
 
 
