@@ -442,6 +442,7 @@ footer.contacts {
     }
 
 .gallery-container {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,7 +455,7 @@ footer.contacts {
   display: flex;
   justify-content: center;
   max-width: auto;
-  max-height: 500px;
+  max-height: 450px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   
