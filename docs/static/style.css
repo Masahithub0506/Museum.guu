@@ -247,6 +247,7 @@ nav {
 
 
 .about {
+  box-sizing: border-box;
  text-align: center;
  background-color: #fff;
  color: #20426C;
@@ -257,6 +258,7 @@ nav {
 }
 
 .history{
+   box-sizing: border-box;
  /* background-attachment: fixed; */
   background-image: src="static/image/history.png";
     background-color: #20426C;
