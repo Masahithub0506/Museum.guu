@@ -438,16 +438,16 @@ footer.contacts {
 
     h1 {
       text-align: center;
-      margin-top: 30px 20px 0px 20px;
+      margin-top: 25px 20px 0px 20px;
     }
 
 .gallery-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   box-sizing: border-box;
-  padding: 0px 100px 50px 100px;
+  padding: 0px 100px 45px 100px;
 }
 
 .gallery-container img {
@@ -455,7 +455,7 @@ footer.contacts {
   justify-content: center;
   max-width: auto;
   max-height: 500px;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   
 }
