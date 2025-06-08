@@ -457,6 +457,8 @@ footer.contacts {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  box-sizing: border-box;
+  padding: 50px 100px;
 }
 
 .gallery-container img {
@@ -466,6 +468,8 @@ footer.contacts {
   max-height: 500px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+   box-sizing: border-box;
+  padding: 50px 100px;
 }
 
 button {
