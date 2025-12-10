@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: https://github.com/Masahithub0506/Museum.guu
+  branch: main
+  auth_scope: repo
+
+media_folder: "img/uploads"   # куда будут загружаться фото
+public_folder: "/img/uploads"
+
+collections:
+  - name: "pages"
+    label: "Страницы"
+    files:
+      - label: "Главная страница"
+        name: "home"
+        file: "index.html"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Контент", name: "body", widget: "markdown" }
+
+  - name: "gallery"
+    label: "Галерея"
+    folder: "img/gallery"
+    create: true
+    fields:
+      - { label: "Название", name: "title", widget: "string" }
+      - { label: "Фото", name: "image", widget: "image" }
