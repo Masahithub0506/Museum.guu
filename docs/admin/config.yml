@@ -1,27 +1,61 @@
 backend:
   name: github
   repo: https://github.com/Masahithub0506/Museum.guu
-  branch: main
-  auth_scope: repo
+  branch: main  # основная ветка
 
-media_folder: "img/uploads"   # куда будут загружаться фото
-public_folder: "/img/uploads"
+media_folder: "docs/static"   # папка для загрузки изображений
+public_folder: "/static"
 
 collections:
-  - name: "pages"
-    label: "Страницы"
-    files:
-      - label: "Главная страница"
-        name: "home"
-        file: "index.html"
-        fields:
-          - { label: "Заголовок", name: "title", widget: "string" }
-          - { label: "Контент", name: "body", widget: "markdown" }
-
-  - name: "gallery"
-    label: "Галерея"
-    folder: "img/gallery"
+  - name: "hero"
+    label: "Главный баннер"
+    folder: "docs/content/hero"
     create: true
+    slug: "{{slug}}"
     fields:
-      - { label: "Название", name: "title", widget: "string" }
-      - { label: "Фото", name: "image", widget: "image" }
+      - {label: "Заголовок", name: "title", widget: "string"}
+      - {label: "Текст", name: "tagline", widget: "text"}
+      - {label: "Фон", name: "background", widget: "image"}
+
+  - name: "about"
+    label: "О нас"
+    folder: "docs/content/about"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Заголовок", name: "title", widget: "string"}
+      - {label: "Текст", name: "text", widget: "markdown"}
+
+  - name: "exhibits"
+    label: "Экспонаты"
+    folder: "docs/content/exhibits"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Название", name: "title", widget: "string"}
+      - {label: "Текст", name: "text", widget: "markdown"}
+      - {label: "Галерея изображений", name: "images", widget: "list", allow_add: true, field: {label: "Изображение", name: "image", widget: "image"}}
+
+  - name: "history"
+    label: "История ГУУ"
+    folder: "docs/content/history"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Заголовок", name: "title", widget: "string"}
+      - {label: "Текст", name: "text", widget: "markdown"}
+      - {label: "Фон", name: "background", widget: "image"}
+
+  - name: "contacts"
+    label: "Контакты"
+    folder: "docs/content/contacts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Телефон", name: "phone", widget: "string"}
+      - {label: "Почта", name: "email", widget: "string"}
+      - {label: "Адрес", name: "address", widget: "string"}
+      - {label: "Telegram", name: "telegram", widget: "string"}
+      - {label: "Иконка Телеграм", name: "telegram_icon", widget: "image"}
+      - {label: "Иконка Почта", name: "email_icon", widget: "image"}
+      - {label: "Иконка Телефон", name: "phone_icon", widget: "image"}
