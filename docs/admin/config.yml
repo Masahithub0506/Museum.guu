@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: https://github.com/Masahithub0506/Museum.guu
-  branch: main  # основная ветка
+  repo: Masahithub0506/Museum.guu
+  branch: main
 
-media_folder: "docs/static"   # папка для загрузки изображений
+media_folder: "docs/static"
 public_folder: "/static"
 
 collections:
@@ -34,7 +34,7 @@ collections:
     fields:
       - {label: "Название", name: "title", widget: "string"}
       - {label: "Текст", name: "text", widget: "markdown"}
-      - {label: "Галерея изображений", name: "images", widget: "list", allow_add: true, field: {label: "Изображение", name: "image", widget: "image"}}
+      - {label: "Галерея", name: "images", widget: "list", field: {label: "Изображение", name: "image", widget: "image"}}
 
   - name: "history"
     label: "История ГУУ"
