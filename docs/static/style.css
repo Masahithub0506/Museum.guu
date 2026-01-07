@@ -252,7 +252,8 @@ nav {
  margin: 0 20px 0 0;
 }
 
-.history{
+.history
+{
    box-sizing: border-box;
  /* background-attachment: fixed; */
   background-image: url("static/image/history1.png");
@@ -271,8 +272,32 @@ nav {
     padding: 100px 150px 50px 150px;
 }
 
-
-
+.history1,
+history2,
+history3,
+history4,
+history5,
+history6,
+history7,
+history8,
+history9,
+history10{
+   box-sizing: border-box;
+ background-color: #fff;
+ color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    
+    
+    padding: 100px 150px 50px 150px;
+}
 
 .exhibits {
  text-align: center;
@@ -478,7 +503,16 @@ footer.contacts {
   
 }
 
-
+.pod {
+ box-sizing: border-box;
+ text-align: center;
+ background-color: #fff;
+ color: #20426C;
+ width: 100%;
+ height: 100%;
+ padding: 100px 150px 50px 150px;
+ margin: 0 20px 0 0;
+}
 
 
 footer.contacts {
