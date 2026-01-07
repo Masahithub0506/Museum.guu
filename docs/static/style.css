@@ -307,7 +307,8 @@ history10{
 
 .alex,
 .koz,
-.un {
+.un,
+.pod{
   padding: 0 30px;
   display: flex;
   align-items: flex-start;
@@ -316,7 +317,8 @@ history10{
 
 .alex-gallery-container,
 .koz-gallery-container,
-.un-gallery-container {
+.un-gallery-container,
+.gallery-container{
   display: flex;
   align-items: center;
   gap: 10px;
@@ -324,7 +326,8 @@ history10{
 
 #alex-img,
 #koz-img,
-#un-img {
+#un-img,
+#gallery-image{
   max-width: 500px;
   height: auto;
   border-radius: 20px;
@@ -333,7 +336,8 @@ history10{
 
 #alex-text,
 #koz-text,
-#un-text {
+#un-text,
+#pod{
   flex: 1;
  
   line-height: 1.6;
