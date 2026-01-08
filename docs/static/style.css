@@ -550,6 +550,13 @@ nav {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+button {
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
 */
 
 /* ===== ОБЩАЯ СЕКЦИЯ ===== */
@@ -612,11 +619,7 @@ nav {
 
 
 
-button {
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-}
+
 
 
 
