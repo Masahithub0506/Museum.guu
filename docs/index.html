@@ -67,11 +67,30 @@
 
 
 
+-->
 
 
-<div class="alex">
-  <!-- Левая часть: текст -->
-    <div id="alex-text">
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+        
+
+<div class="section">
+  <div class="text" id="alex-text">
     <h2>Александровское коммерческое училище</h2>
     <p>
       Александровское коммерческое училище (1880–1917) является ключевым экспонатом,
@@ -96,7 +115,7 @@
     </p>
   </div>
   <!-- Правая часть: галерея -->
-  <div class="alex-gallery-container">
+ <div class="gallery alex-gallery-container">
 <button onclick="prevAlexImage()">←</button>
     <img id="alex-img" src="static/ex/alex1.jpg" alt="Фото">
     <button onclick="nextAlexImage()">→</button>
@@ -104,16 +123,16 @@
 </div>
 
             
+<div class="section reverse">
 
-             <div class="sov">
   <!-- Левая часть: галерея -->
-  <div class="sov-gallery-container">
+  <div class="gallery sov-gallery-container">
     <button onclick="prevSovImage()">←</button>
     <img id="sov-img" src="static/ex/sov1.jpg" alt="Фото">
     <button onclick="nextSovImage()">→</button>
   </div>
   <!-- Правая часть: текст -->
-  <div id="sov-text" style="text-align: left; max-width: 800px; margin: auto;">
+  <div class="text" id="sov-text">
       <h2> Первые шаги вуза (МПЭПИ-МПЭИ) 1919-1930 </h2>
     <p>Экспонат посвящён революционным преобразованиям в системе образования.
 После Октябрьской революции 1917 года начали создаваться новые учебные заведения практической направленности — техникумы.
@@ -142,9 +161,8 @@
 
 
 
-<div class="voi">
-  <!-- Левая часть: текст -->
-  <div id="voi-text" style="text-align: left; max-width: 800px; margin: auto;">
+<div class="section">
+  <div class="text" id="voi-text">
     <h2>Суровые годы войны и послевоенное восстановление 1941-1950 </h2>
     <p>
       Экспонат посвящён Московскому инженерно-экономическому институту в годы Великой Отечественной войны — тяжёлому, но героическому периоду в его истории.
@@ -166,7 +184,7 @@
   </div>
 
   <!-- Правая часть: галерея -->
-  <div class="voi-gallery-container">
+   <div class="gallery voi-gallery-container">
     <button onclick="prevVoiImage()">←</button>
     <img id="voi-img" src="static/ex/voi1.jpg" alt="Фото">
     <button onclick="nextVoiImage()">→</button>
@@ -182,16 +200,16 @@
 
 
 
-
-             <div class="koz">
+<div class="section reverse">
+ 
   <!-- Левая часть: галерея -->
-  <div class="koz-gallery-container">
+   <div class="gallery koz-gallery-container">
     <button onclick="prevKozImage()">←</button>
     <img id="koz-img" src="static/ex/koz1.jpg" alt="Фото">
     <button onclick="nextKozImage()">→</button>
   </div>
   <!-- Правая часть: текст -->
-  <div id="koz-text">
+  <div class="text" id="koz-text">
     <h2> Эпоха Олимпиады Козловой: Новые горизонты 1950-1960</h2>
     <h2> Эпоха Олимпиады Козловой: Первый Управленческий 1970-1985</h2>
     <p>
@@ -215,9 +233,8 @@
 
 
 
-<div class="por">
-  <!-- Левая часть: текст -->
-  <div id="por-text">
+<div class="section">
+  <div class="text" id="por-text">
     <h2>Эпоха Анатолия Поршнева: академия в годы перемен 1986-1997</h2>
     <p>
       Этот раздел экспозиции посвящён переломному периоду в истории Государственного университета управления — времени руководства Анатолия Григорьевича Поршнева (1986–1997).
@@ -233,7 +250,7 @@
   </div>
 
   <!-- Правая часть: галерея -->
-  <div class="por-gallery-container">
+<div class="gallery por-gallery-container">
     <button onclick="prevPorImage()">←</button>
     <img id="por-img" src="static/ex/por1.jpg" alt="Фото">
     <button onclick="nextPorImage()">→</button>
@@ -242,15 +259,14 @@
 
 
 
-             <div class="un">
-  <!-- Левая часть: галерея -->
-  <div class="un-gallery-container">
+  <div class="section reverse">
+  <div class="gallery un-gallery-container">      
     <button onclick="prevUnImage()">←</button>
     <img id="un-img" src="static/ex/un1.jpg" alt="Фото">
     <button onclick="nextUnImage()">→</button>
   </div>
   <!-- Правая часть: текст -->
-  <div id="un-text">
+ <div class="text" id="un-text">
     <h2>Университет на рубеже веков: новая глава в истории вуза 1998-2006</h2>
      <h2> Университет в XXI веке: достижения настоящего</h2p>
      <h2> Университет в XXI веке: наше будущее</h2>
@@ -273,9 +289,8 @@
   </div>
 </div>
 
-<div class="pod">
-  <!-- Левая часть: текст -->
-    <div id="pod-text">
+<div class="section">
+  <div class="text" id="pod-text">
     <h2>Подарки и сувениры ГУУ</h2>
     <p>
       В экспозиции находятся:<br>
@@ -288,7 +303,7 @@
     </p>
  </div>
 <!-- Правая часть: галерея -->
-<div class="pod-gallery-container">
+<div class="gallery pod-gallery-container">
   <button class="prev" onclick="prevPodImage()">←</button>
   <img id="pod-img" src="static/gallery/g1.jpg" alt="Gallery image" />
   <button class="next" onclick="nextPodImage()">→</button>
@@ -296,7 +311,7 @@
 </div>
     
 
-
+-->
     
      <!-- 
   
@@ -607,6 +622,7 @@ showUnImage(unIndex);
  </div>
 </body>
 </html>
+
 
 
 
