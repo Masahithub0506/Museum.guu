@@ -255,7 +255,18 @@ nav {
 */
 
 
-.history
+.history,
+.history1,
+.history2, 
+.history3,
+.history4,
+.history5,
+.history6,
+.history7,
+.history8,
+.history9,
+.history10,
+.history11{
 {
    box-sizing: border-box;
  /* background-attachment: fixed; */
@@ -275,187 +286,7 @@ nav {
     padding: 150px 150px;
 }
 
-.history1{
-   box-sizing: border-box;
- /* background-attachment: fixed; */
-  background-image: url("static/image/history1.png");
-    background-color: #20426C;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    
- padding: 150px 150px;
-}
-.history2{
-   box-sizing: border-box;
- /* background-attachment: fixed; */
-  background-image: url("static/image/history2.png");
-    background-color: #20426C;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    
-    padding: 150px 150px;
-}
 
-.history3{
-   box-sizing: border-box;
- /* background-attachment: fixed; */
-  background-image: url("static/image/history3.png");
-    background-color: #20426C;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    
-    padding: 150px 150px;
-}
-.history4{
-   box-sizing: border-box;
- /* background-attachment: fixed; */
-  background-image: url("static/image/history4.png");
-    background-color: #20426C;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    
-     padding: 150px 150px;;
-}
-.history5{
-   box-sizing: border-box;
- /* background-attachment: fixed; */
-  background-image: url("static/image/history5.png");
-    background-color: #20426C;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    
-    padding: 150px 150px;
-}
-.history6{
-   box-sizing: border-box;
- /* background-attachment: fixed; */
-  background-image: url("static/image/history6.png");
-    background-color: #20426C;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    
-     padding: 150px 150px;
-}
-.history7{
-   box-sizing: border-box;
- /* background-attachment: fixed; */
-  background-image: url("static/image/history7.png");
-    background-color: #20426C;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    
-    padding: 150px 150px;
-}
-.history8{
-   box-sizing: border-box;
- /* background-attachment: fixed; */
-  background-image: url("static/image/history8.png");
-    background-color: #20426C;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-     padding: 150px 150px;
-}
-.history9{
-   box-sizing: border-box;
- /* background-attachment: fixed; */
-  background-image: url("static/image/history9.png");
-    background-color: #20426C;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    
-    padding: 150px 150px;
-}
-.history10,
-.history11{
-   box-sizing: border-box;
- /* background-attachment: fixed; */
-  background-image: url("static/image/history10.png");
-    background-color: #20426C;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    
-     padding: 150px 150px;
-}
 
 .exhibits {
  text-align: center;
@@ -859,7 +690,7 @@ section,
     padding: 10px;
   }
 
-
+/* Скрытое меню, появляется при нажатии 
   .alex,
   .koz,
   .un,
@@ -912,6 +743,22 @@ section,
   }
 }
 
+*/
+
+.section,
+  .section.reverse {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .section .text {
+    max-width: 100%;
+  }
+
+  .section img {
+    max-width: 100%;
+  }
 
   
  
