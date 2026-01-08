@@ -255,18 +255,7 @@ nav {
 */
 
 
-.history,
-.history1,
-.history2, 
-.history3,
-.history4,
-.history5,
-.history6,
-.history7,
-.history8,
-.history9,
-.history10,
-.history11{
+.history
 {
    box-sizing: border-box;
  /* background-attachment: fixed; */
@@ -286,7 +275,187 @@ nav {
     padding: 150px 150px;
 }
 
+.history1{
+   box-sizing: border-box;
+ /* background-attachment: fixed; */
+  background-image: url("static/image/history1.png");
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    
+ padding: 150px 150px;
+}
+.history2{
+   box-sizing: border-box;
+ /* background-attachment: fixed; */
+  background-image: url("static/image/history2.png");
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    
+    padding: 150px 150px;
+}
 
+.history3{
+   box-sizing: border-box;
+ /* background-attachment: fixed; */
+  background-image: url("static/image/history3.png");
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    
+    padding: 150px 150px;
+}
+.history4{
+   box-sizing: border-box;
+ /* background-attachment: fixed; */
+  background-image: url("static/image/history4.png");
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    
+     padding: 150px 150px;;
+}
+.history5{
+   box-sizing: border-box;
+ /* background-attachment: fixed; */
+  background-image: url("static/image/history5.png");
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    
+    padding: 150px 150px;
+}
+.history6{
+   box-sizing: border-box;
+ /* background-attachment: fixed; */
+  background-image: url("static/image/history6.png");
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    
+     padding: 150px 150px;
+}
+.history7{
+   box-sizing: border-box;
+ /* background-attachment: fixed; */
+  background-image: url("static/image/history7.png");
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    
+    padding: 150px 150px;
+}
+.history8{
+   box-sizing: border-box;
+ /* background-attachment: fixed; */
+  background-image: url("static/image/history8.png");
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+     padding: 150px 150px;
+}
+.history9{
+   box-sizing: border-box;
+ /* background-attachment: fixed; */
+  background-image: url("static/image/history9.png");
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    
+    padding: 150px 150px;
+}
+.history10,
+.history11{
+   box-sizing: border-box;
+ /* background-attachment: fixed; */
+  background-image: url("static/image/history10.png");
+    background-color: #20426C;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    
+     padding: 150px 150px;
+}
 
 .exhibits {
  text-align: center;
@@ -296,9 +465,6 @@ nav {
  height: auto;
 }
 
-
-
-/*
 .alex,
 .koz,
 .un,
@@ -382,84 +548,11 @@ nav {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
 button {
   font-size: 24px;
   padding: 10px;
   cursor: pointer;
 }
-*/
-
-/* ===== ОБЩАЯ СЕКЦИЯ ===== */
-.section {
-  display: flex;
-  align-items: flex-start;      /* все элементы от верха */
-  gap: 50px;
-
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  box-sizing: border-box;
-}
-
-/* Чередование: картинка слева */
-.section.reverse {
-  flex-direction: row-reverse;
-}
-
-/* ===== ТЕКСТ ===== */
-.section .text {
-  flex: 1;
-  max-width: 600px;
-  line-height: 1.6;
-  color: #20426C;
-
-  margin: 0;
-  padding: 0;
-  align-self: flex-start;
-}
-
-.section .text h2:first-child {
-  margin-top: 0;
-}
-
-/* ===== ГАЛЕРЕЯ ===== */
-.section .gallery {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;      /* ключевой момент */
-  justify-content: center;
-  gap: 10px;
-}
-
-/* ===== КАРТИНКИ ===== */
-.section img {
- max-width: 500px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* ===== КНОПКИ ===== */
-.section button {
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -699,7 +792,7 @@ section,
     padding: 10px;
   }
 
-/* Скрытое меню, появляется при нажатии 
+
   .alex,
   .koz,
   .un,
@@ -752,22 +845,6 @@ section,
   }
 }
 
-*/
-
-.section,
-  .section.reverse {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
-
-  .section .text {
-    max-width: 100%;
-  }
-
-  .section img {
-    max-width: 100%;
-  }
 
   
  
