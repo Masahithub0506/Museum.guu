@@ -143,7 +143,7 @@ h2{
 
 /* Стили для секций */
 section {
-  padding: 100px 50px;
+  padding: 80px 50px;
   border-bottom: 2px solid #ddd;
 }
 
@@ -308,7 +308,7 @@ nav {
   padding: 0 30px;
   display: flex;
   align-items: flex-start;
-  gap: 20px 20px;
+  gap: 50px;
 }
 
 .alex-gallery-container,
