@@ -291,7 +291,7 @@ nav {
     vertical-align: middle;
     color: #fff;
     
-  /*  padding: 50px 150px;*/
+ padding: 80px 150px;
 }
 .history2{
    box-sizing: border-box;
@@ -309,7 +309,7 @@ nav {
     vertical-align: middle;
     color: #fff;
     
-    padding: 50px 150px;
+    padding: 80px 150px;
 }
 
 .history3{
@@ -328,7 +328,7 @@ nav {
     vertical-align: middle;
     color: #fff;
     
-    padding: 50px 150px;
+    padding: 80px 150px;
 }
 .history4{
    box-sizing: border-box;
@@ -346,7 +346,7 @@ nav {
     vertical-align: middle;
     color: #fff;
     
-    padding: 50px 150px;
+    padding: 80px 150px;
 }
 .history5{
    box-sizing: border-box;
@@ -364,7 +364,7 @@ nav {
     vertical-align: middle;
     color: #fff;
     
-    padding: 50px 150px;
+    padding: 80px 150px;
 }
 .history6{
    box-sizing: border-box;
@@ -382,7 +382,7 @@ nav {
     vertical-align: middle;
     color: #fff;
     
-    padding: 50px 150px;
+    padding: 80px 150px;
 }
 .history7{
    box-sizing: border-box;
@@ -400,7 +400,7 @@ nav {
     vertical-align: middle;
     color: #fff;
     
-    padding: 50px 150px;
+    padding: 80px 150px;
 }
 .history8{
    box-sizing: border-box;
@@ -418,7 +418,7 @@ nav {
     vertical-align: middle;
     color: #fff;
     
-    padding: 50px 150px;
+    padding: 80px 150px;
 }
 .history9{
    box-sizing: border-box;
@@ -436,7 +436,7 @@ nav {
     vertical-align: middle;
     color: #fff;
     
-    padding: 50px 150px;
+    padding: 80px 150px;
 }
 .history10{
    box-sizing: border-box;
@@ -454,7 +454,7 @@ nav {
     vertical-align: middle;
     color: #fff;
     
-    padding: 50px 150px;
+    padding: 80px 150px;
 }
 
 .exhibits {
@@ -775,12 +775,12 @@ section,
   .history2, 
   .history3,
   .history4,
-  .history5,{
+  .history5,
   .history6,
   .history7,
   .history8,
   .history9,
-  .history10,
+  .history10 {
     height: auto;
     padding: 10px;
     text-align: center; /* Центрирование контента на маленьких экранах */
@@ -811,7 +811,7 @@ section,
   #sov-img,
   #voi-img,
   #por-img,
-  #pod-image {
+  #pod-img {
     max-width: 90%;
   }
 
