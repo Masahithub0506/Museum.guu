@@ -391,35 +391,11 @@ showUnImage(unIndex);
 
 
       // Галерея POD
-  const podImages = [
-    'static/gallery/g1.jpg',
-    'static/gallery/g2.jpg',
-    'static/gallery/g3.jpg',
-    'static/gallery/g4.jpg',
-    'static/gallery/g5.jpg',
-    'static/gallery/g6.jpg',
-    'static/gallery/g7.jpg',
-    'static/gallery/g8.jpg',
-    'static/gallery/g9.jpg',
-    'static/gallery/g10.jpg'
-  ];
-
+  const podImages = [ 'static/gallery/g1.jpg',  'static/gallery/g2.jpg',  'static/gallery/g3.jpg',  'static/gallery/g4.jpg', 'static/gallery/g5.jpg', 'static/gallery/g6.jpg',  'static/gallery/g7.jpg',  'static/gallery/g8.jpg',   'static/gallery/g9.jpg',  'static/gallery/g10.jpg'  ];
   let podIndex = 0;
-
-  function showPodImage(index) {
-    document.getElementById('pod-img').src = podImages[index];
-  }
-
-  function prevPodImage() {
-    podIndex = (podIndex - 1 + podImages.length) % podImages.length;
-    showPodImage(podIndex);
-  }
-
-  function nextPodImage() {
-    podIndex = (podIndex + 1) % podImages.length;
-    showPodImage(podIndex);
-  }
-
+  function showPodImage(index) { document.getElementById('pod-img').src = podImages[index];  }
+  function prevPodImage() { podIndex = (podIndex - 1 + podImages.length) % podImages.length; showPodImage(podIndex);  }
+  function nextPodImage() {    podIndex = (podIndex + 1) % podImages.length;  showPodImage(podIndex);  }
   // Инициализация
   showPodImage(podIndex);
     
@@ -635,6 +611,7 @@ showUnImage(unIndex);
  </div>
 </body>
 </html>
+
 
 
 
