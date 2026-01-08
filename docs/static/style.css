@@ -308,7 +308,7 @@ nav {
   padding: 0 30px;
   display: flex;
   align-items: flex-start;
-  gap: 50px;
+  gap: 20px 50px;
 }
 
 .alex-gallery-container,
