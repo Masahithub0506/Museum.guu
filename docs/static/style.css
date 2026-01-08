@@ -437,7 +437,8 @@ nav {
     
     padding: 150px 150px;
 }
-.history10{
+.history10,
+.history11{
    box-sizing: border-box;
  /* background-attachment: fixed; */
   background-image: url("static/image/history10.png");
@@ -471,7 +472,7 @@ nav {
   padding: 0 30px;
   display: flex;
   align-items: flex-start;
-  gap: 50px;
+  gap: 10px;
 }
 
 .alex-gallery-container,
@@ -779,7 +780,8 @@ section,
   .history7,
   .history8,
   .history9,
-  .history10 {
+  .history10,
+  .history11{
     height: auto;
     padding: 10px;
     text-align: center; /* Центрирование контента на маленьких экранах */
